@@ -1,0 +1,1 @@
+A system present in all [[Sharding|sharded]] blockchains that allows the [[Block]]s produced in the L2 can be reconstructed by the L1 [[Validator]]s. 

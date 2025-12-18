@@ -1,0 +1,1 @@
+The measure of the quantity of verifiable computation that a blockchain can perform. Blockspace produced by different blockchain networks can also have different degrees of *quality*. In both [[Proof of Work and Proof of Stake]] networks, the quality of the blockspace is proportional to the [[Economic Security]] of the authors that produce the blocks.

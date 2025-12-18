@@ -1,0 +1,1 @@
+A special kind of [[The Layers Terminology|L2]] in the context of Ethereum.

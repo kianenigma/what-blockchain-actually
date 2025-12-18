@@ -1,0 +1,12 @@
+- Blockchain as **Authority**
+	- State 
+	- Rules of the authority
+	- Mutation 
+- Blockchain as **Deterministic state machine**
+	- State
+	- State transition function
+	- Transition
+- Blockchain as a **Computer**
+	- Memory (state)
+	- Code (rules)
+	- Input ([[Transaction]])

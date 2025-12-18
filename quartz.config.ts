@@ -66,6 +66,8 @@ const config: QuartzConfig = {
         },
         keepBackground: false,
       }),
+      // Note: must come before ObsidianFlavoredMarkdown
+      Plugin.Excalidraw(),
       Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
       Plugin.GitHubFlavoredMarkdown(),
       Plugin.TableOfContents(),

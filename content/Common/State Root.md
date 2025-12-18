@@ -1,0 +1,1 @@
+A [[Commitment Hash]] of the entire state of the blockchain at a given block. It is almost always calculated through some form of [[Merkel Tree]]. This is why it is often called state *root*, because the final hash is the root of the [[Merkel Tree]]. 

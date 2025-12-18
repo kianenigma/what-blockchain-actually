@@ -1,0 +1,1 @@
+Equivalent of [[Validator]]s but in [[Proof of Work and Proof of Stake#Proof of Work]] networks.
