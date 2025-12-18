@@ -23,7 +23,7 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
   // Merge options with defaults
   const options: ContentMetaOptions = { ...defaultOptions, ...opts }
 
-  function ContentMetadata({ cfg, fileData, displayClass }: QuartzComponentProps) {
+  function ContentMetadata({ cfg, fileData, allFiles, displayClass }: QuartzComponentProps) {
     const text = fileData.text
 
     if (text) {
@@ -35,11 +35,38 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
 
       // Display reading time if enabled
       if (options.showReadingTime) {
-        const { minutes, words: _words } = readingTime(text)
-        const displayedTime = i18n(cfg.locale).components.contentMeta.readingTime({
-          minutes: Math.ceil(minutes),
-        })
-        segments.push(<span>{displayedTime}</span>)
+        // Special Logic: If book-index is true, calculate total time
+        if (fileData.frontmatter?.["book-index"]) {
+          let totalMinutes = 0
+          for (const file of allFiles) {
+            if (file.text) {
+              const { minutes } = readingTime(file.text)
+              totalMinutes += minutes
+            }
+          }
+
+          const hours = Math.floor(totalMinutes / 60)
+          const minutes = Math.ceil(totalMinutes % 60)
+
+          // Format based on duration
+          let timeDisplay
+          if (hours > 0) {
+            timeDisplay = `${hours}h ${minutes}m total reading time`
+          } else {
+            timeDisplay = i18n(cfg.locale).components.contentMeta.readingTime({
+              minutes: Math.ceil(totalMinutes),
+            })
+          }
+
+          segments.push(<span>{timeDisplay}</span>)
+        } else {
+          // Standard single-page logic
+          const { minutes, words: _words } = readingTime(text)
+          const displayedTime = i18n(cfg.locale).components.contentMeta.readingTime({
+            minutes: Math.ceil(minutes),
+          })
+          segments.push(<span>{displayedTime}</span>)
+        }
       }
 
       return (

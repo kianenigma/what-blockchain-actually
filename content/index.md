@@ -2,6 +2,7 @@
 title: What Is Blockchain, Actually?
 Description: What is does a blockchain actually do???
 tags:
+book-index: true
 ---
 ## Table Of Content
 
