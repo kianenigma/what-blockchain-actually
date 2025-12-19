@@ -39,7 +39,7 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
         if (fileData.frontmatter?.["book-index"]) {
           let totalMinutes = 0
           for (const file of allFiles) {
-            if (file.text) {
+            if (file.text && file.slug!.includes("Content")) {
               const { minutes } = readingTime(file.text)
               totalMinutes += minutes
             }

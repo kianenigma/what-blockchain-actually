@@ -6,7 +6,7 @@ TODOs:
 - [ ] LLM optimization
 - [x] Add a part: x chapter: y frontmatter to all notes, and sort based on it
 - [ ] Latex export
-- [ ] Total time should only be in `Content`
+- [x] Total time should only be in `Content`
 - [ ] Make I / we concise 
 - [ ] First reference to each `Common` term.
 
