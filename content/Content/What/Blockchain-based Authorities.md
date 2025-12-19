@@ -56,7 +56,7 @@ Any [[Authority]]'s role is to establish [[Trust]]. Blockchains are systems that
 Digital state is a great fit for blockchains, since it can be easily mutated by the same system. Real world matters are more difficult, due to the [[Oracle Problem]], but it can be done. End of the day, the [[Trustless]]-ness of Ethereum managing the transfer of the ETH token (a purely digital contentious state that it can fully read and write) is fundamentally different from an Ethereum [[Smart Contract]] managing tokenized real-world-assets. 
 
 While we can strive to solve the [[Oracle Problem]] in a [[Trustless]] manner, turning a blind eye to it is defying the whole purpose of why the [[Web3]] industry exists, and why it managed it attract so many early adopters.
-## Next
+
 In the next chapter, [[Execution, Ordering, History and State Machines]], we build on top of the 3 properties of blockchains that we know about: 
 - State
 - Mutations + rules of mutations

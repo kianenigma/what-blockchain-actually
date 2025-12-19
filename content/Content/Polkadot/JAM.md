@@ -24,7 +24,7 @@ Similar to the on-chain/in-core execution environment, JAM is recognizing that t
 The cost overhead of storing data in [[Data Availability]] is much less than the [[State]], as the history of the data is not kept in the [[Data Availability]].
 ## Continuous Execution 
 Finally, JAM is leveraging two of its assets: 
-- A new lean, register-based VM based on RiscV
+- A new lean, register-based VM based on RISC-V
 - Access to [[Data Availability]] for storing arbitrary information
 To allow, likely for the first time, the ability to write continuous code to be written in a blockchain. By _continuous_, we mean a block of code that can take a minute or an hour to complete, and as the developer we don't have to think about splitting this block of code into multiple small chunks that fit in a block. Search for topics like "DOOM on Polkadot JAM" and "Polkadot JAM CoreVM" to learn more and see demos of this new technology in action.
 

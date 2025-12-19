@@ -1,14 +1,22 @@
+---
+draft: "true"
+---
 
 TODOs:
 - [ ] LLM optimization
-- [ ] Add a part: x chapter: y frontmatter to all notes, and sort based on it
+- [x] Add a part: x chapter: y frontmatter to all notes, and sort based on it
+- [ ] Latex export
+- [ ] Total time should only be in `Content`
+- [ ] Make I / we concise 
+- [ ] First reference to each `Common` term.
+
 
 Reading Checklist: 
 - [x] The guy who was into classical distributed systems and blockchains
-- [ ] Don't be evil vs. Can't be evil. 
-- [ ] Rename: Blockchain wiki, or a good name with good SEO
-- [ ] Proposition and Glossary should go to `Common` 
-- [ ] Appendix can remain, but should be minimized.
+- [x] Rename: Blockchain wiki, or a good name with good SEO
+- [x] Proposition and Glossary should go to `Common` 
+- [x] Appendix can remain, but should be minimized.
+- [ ] https://github.com/SolanaPython/SolanaPython
 
 Publication Checklist: 
 - [ ] Parity, Polkadot Twitter

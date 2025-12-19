@@ -1,6 +1,6 @@
 ---
 title: What Is Blockchain, Actually?
-Description: What is does a blockchain actually do???
+Description: What does a blockchain actually do???
 tags:
 book-index: true
 ---
@@ -31,12 +31,12 @@ book-index: true
 - Part 3: Polkadot
 	- [[Polkadot]]
 	- [[JAM]]
+- Summaries: 
+	- [[This Book In 1 Sentence]]
+	- [[This Book In 1 Paragraph]]
+	- [[This Book In 1 Page]]
 - Part 4: Global Appendices
 	- Stuff that I wanted to learn more about, and I find them to be core pieces of the blockchain tech stack, with lots of room to grow more
 	- Bridges
 	- TEEs
 	- Moon Math: FHE, ZK and MPC
-- Summaries: 
-	- [[This Book In 1 Sentence]]
-	- [[This Book In 1 Paragraph]]
-	- [[This Book In 1 Page]]

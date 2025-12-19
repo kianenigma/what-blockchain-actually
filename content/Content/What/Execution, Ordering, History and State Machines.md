@@ -94,7 +94,7 @@ This chapter was our first step towards a more concrete definition of blockchain
 - It retains enough information for anyone to **re-audit the entire** history.
 
 We also noted that instead of a computer, a [[State Machine]] analogy can be used. This in fact summarized our main 3 abstract mental models to think about blockchains, all 3 of which are listed in [[Blockchain Models]]. 
-## Next 
+
 We will next take the last step towards a concrete definition of blockchains in [[Blocks, Transactions, And Blockchain Systems]]. 
 
 [^1]: the phrase "*who polices the police?*" encapsulates well why auditing a human-based trust often relies on further human-based trust. 

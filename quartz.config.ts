@@ -8,16 +8,18 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    pageTitle: "What Is A Blockchain, Actually??",
     pageTitleSuffix: "",
-    enableSPA: true,
+    // TODO: I think false is better for SEO?
+    enableSPA: false,
     enablePopovers: true,
     analytics: {
+      // TODO:
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    baseUrl: "blog.kianenigma.com/what-blockchain-actually",
+    ignorePatterns: ["private", "templates", ".obsidian", "Resources"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",

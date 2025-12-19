@@ -41,6 +41,7 @@ What else checkers would typically do but are not mentioned above:
 > [!note] Validators
 > The combination of authors and checkers is often called the [[Validator]] group of the blockchain. Ultimately, the work done by this group of nodes is considered the most [[Trustless]]. Moreover, the work done by this group is called [[Onchain and Offchain|onchain execution]], while anything else is called *offchain*.
 
+![[Blockchain Networks 2025-12-19-17.25.17.excalidraw]]
 ## Full Node 
 Full nodes are the ones that are following the work of the authors by re-executing the [[STF]] based on proposed blocks, but don't actively participate in creation of new blocks and don't play any significant role in the [[Consensus Algorithm]].
 
@@ -80,7 +81,7 @@ Instead, **they only follow the *block headers*, and verify cryptographic proofs
 
 Similar to what was said in [[Blockchain-based Authorities#Trustless -ness Can Be a Spectrum]], this is also a spectrum and we can be flexible about it. Perhaps an application can initially load with trusted RPC data, but in the background, or upon user request, verify the sensitive information using [[State Proof]]s or by running a light node.
 ## Appendix
-A number of auxiliary topics follows.
+A number of auxiliary topics related to the above points follows.
 ### Proposer Builder Separation (PBS).
 Predominantly in Ethereum, the task of finding the most *efficient* block to propose is further decoupled from the [[#Authors]], and is given to a market of other nodes that are actively searching and bidding for the best block to produce, called **Proposers**. This approach is particularly popular in Ethereum given its vibrant [[DeFi]] ecosystem and the possibility of [MEV](https://arxiv.org/abs/2411.03327).
 
@@ -90,16 +91,34 @@ A blockchain may have a closed set of nodes that perform the [[Consensus Algorit
 
 > Imagine if a government of a nation would run a [[Consortium Blockchains]] to trace how the tax money is being used. This blockchain would be a closed on, and a user should not be able to send a transaction to it to re-collect their tax money. But they would be able to transparently see how this money is spent.
 
-## Two Layers of Networks
+### Two Layers of Networks
 - Notice how a single blockchain is a network of nodes that are being interconnect. 
 - But we also know that many blockchains exists in the world (Ethereum, Polkadot, NEAR, Bitcoin). Also, some blockchains have the ability to host other second-[[The Layers Terminology|layer]] (often called a layer-2 or L2) blockchains on top of them, such as [[Rollup]]s in Ethereum.
 - This means that an ecosystem of blockchains is itself a broader network of blockchains. 
 - The common keyword for the technology that allows blockchain A to connect and exchange messages with blockchain B is called, unsurprisingly, a [[Bridge]].
 
 ![[Blockchain Networks 2025-12-18-17.59.23.excalidraw]]
-### User [[Transaction]]s
+### Journey Of a User [[Transaction]]
 A small note about the lifecycle of user transactions and how they get to the transaction queue of nodes. Users can generally submit their transaction to any of the nodes of the networks, regardless of their role, except for [[#Light Node]]. In almost all blockchains, all nodes are constantly gossiping transactions together, meaning that as long as one node receives it, eventually it will be received by all nodes, and eventually a future block author will see and include the transaction in a block.
 
 As noted in the [[#RPC Node]] section, it useful for users to have the freedom to send their transaction to multiple nodes, or directly to validators. If a [[Web3]] limits all user transactions to be submitted via a single node, this single node could in theory censor some users. 
 
 [^1]: See https://www.iog.io/news/to-slash-or-not-to-slash-that-is-the-blockchain-question.
+
+### Block Times
+A small detail worth adding here, which will be useful in future chapters, is to know that most blockchains are constrained by producing blocks at **minimum** time intervals. High level, this is because if too many blocks are produced too quickly one after another, the possibility of [[Fork]]s increase. This can happen due to unpredictable network latencies. This is why blockchains often have a fixed [[Block Time]], meaning that new blocks have to come at least this much apart. For example, Polkadot and Ethereum operate on a 6s and 12s block time.
+
+> More advanced blockchains, and especially those that inherit their [[Trustless]] properties from a different source (called [[The Layers Terminology|layer 2]]) have more freedom to speed up their block times. Some highly optimized blockchains such as Solana also achieve much faster block times, with some tradeoffs.  
+
+## Summary
+In this chapter, we explained the roles of different nodes in a blockchain network. 
+
+The most important one is the overall flow in which:
+- One node decides to author a new block
+- Everyone else receives it, re-verifies it. The verification involves re-execution of the [[STF]], and ensuring that all of the [[Commitment Hash]]es in the [[Block Header]] are valid. 
+
+Secondly, we introduced [[#Light Node]]s and their important function a blockchain network, ensuring that individual users have a way to directly connect to the blockchain network, read data from it and submit [[Transaction]]s, without going through the [[#RPC Node]]s as a gateway that can potentially be centralizing.
+
+Finally, a number of auxiliary topics were discussed, such as how the [[#Journey Of a User Transaction]]. 
+
+[^2]: 
