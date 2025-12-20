@@ -1,5 +1,8 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
+import { simplifySlug } from "./quartz/util/path"
+import { createExplorerSortFn } from "./quartz/util/configSort"
+
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
@@ -37,11 +40,21 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      sortFn: createExplorerSortFn(),
+      filterFn: (node) => node.slugSegment !== "tags" && !node.slug.includes("Excalidraw"),
+    }),
   ],
   right: [
     Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
+    Component.ConditionalRender({
+      component: Component.FirstBacklink(),
+      condition: (page) => {
+        const slug = simplifySlug(page.fileData.slug!)
+        return slug.startsWith("Common/")
+      },
+    }),
     Component.ConditionalRender({
       component: Component.Backlinks(),
       condition: (page) => page.fileData.slug !== "index",
@@ -64,7 +77,10 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      sortFn: createExplorerSortFn(),
+      filterFn: (node) => node.slugSegment !== "tags" && !node.slug.includes("Excalidraw"),
+    }),
   ],
   right: [],
 }

@@ -25,6 +25,7 @@ import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 import BookPagination from "./BookPagination"
 import BookFooter from "./BookFooter"
+import FirstBacklink from "./FirstBacklink"
 
 export {
   ArticleTitle,
@@ -54,4 +55,5 @@ export {
   ConditionalRender,
   BookPagination,
   BookFooter,
+  FirstBacklink,
 }

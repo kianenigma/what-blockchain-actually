@@ -1,5 +1,6 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
+import { folderPageSortFn } from "./quartz/util/configSort"
 
 /**
  * Quartz 4 Configuration
@@ -68,8 +69,10 @@ const config: QuartzConfig = {
         },
         keepBackground: false,
       }),
+
       // Note: must come before ObsidianFlavoredMarkdown
       Plugin.Excalidraw(),
+
       Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
       Plugin.GitHubFlavoredMarkdown(),
       Plugin.TableOfContents(),
@@ -82,7 +85,9 @@ const config: QuartzConfig = {
       Plugin.AliasRedirects(),
       Plugin.ComponentResources(),
       Plugin.ContentPage(),
-      Plugin.FolderPage(),
+      Plugin.FolderPage({
+        sort: folderPageSortFn,
+      }),
       Plugin.TagPage(),
       Plugin.ContentIndex({
         enableSiteMap: true,

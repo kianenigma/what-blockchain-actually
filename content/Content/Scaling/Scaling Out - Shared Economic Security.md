@@ -43,7 +43,8 @@ In this model, used in [[Polkadot]] and NEAR, the work done by the L2s is always
 1. The L1 validators need to be able to reconstruct the L2 [[Block]] (or blocks, if multiple are being re-executed at the same time). This is done by the [[Data Availability]] system.
 2. The L1 validators need to have access to a subset of the L2 state, because the execution of the block being re-executed depends on it. This is done by attaching a subset of the [[Merkel Tree]] of the L2 [[State]] and spreading it alongside the block. This is what was formerly called a [[State Proof]]. 
 
-So, to summarize, in the [[Scaling Out - Shared Economic Security]] model, the verification of the L2 work happens by the virtue of literally re-executing it enough times and by enough L1 validators. 
+## Summary
+In  the [[Scaling Out - Shared Economic Security]] model, the verification of the L2 work happens by the virtue of literally re-executing it enough times and by enough L1 validators. 
 
 [^1]: full paper [here](https://eprint.iacr.org/2024/961).
 [^2]: Search "L1 direct inclusion in Ethereum" to learn more.

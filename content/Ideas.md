@@ -5,10 +5,14 @@ draft: "true"
 TODOs:
 - [ ] LLM optimization
 - [x] Add a part: x chapter: y frontmatter to all notes, and sort based on it
-- [ ] Latex export
+- [x] Latex export
 - [x] Total time should only be in `Content`
 - [ ] Make I / we concise 
-- [ ] First reference to each `Common` term.
+- [ ] Single page PDF export
+- [ ] Fix order in file-tree and `Content` folder
+- [ ] Make edit to this page link
+- [ ] Published version
+- [x] First reference to each `Common` term.
 
 
 Reading Checklist: 

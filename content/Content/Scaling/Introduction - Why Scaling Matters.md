@@ -42,3 +42,12 @@ While horizontal scaling is certainly more promising in terms of its [[#Limits]]
 > The details of the above is usually discussed under the topic of **distributed algorithms**. 
 
 What we discussed in [[Evolution of Blockchain State Machines#Contract Composability]] is in fact a different aspect of the same problem, but at different level of abstraction. Instead of physical machines, each machine is a smart-contract blockchain that can host workloads on it in the form of smart-contracts. As long as all of the smart-contracts, with their data and computation, are in the same environment (e.g. a single smart-contract blockchain), communication and coordination is much simpler. The moment we split them into different environments (a sharded smart-contract blockchain with 2 shards), it becomes harder. We will discuss this further in all chapters about Scaling out and [[Sharding]].
+
+## Preview
+Before going to the next chapters and discussing different approaches, it is worth noting which blockchains are associated with each approach.
+- [[Scaling Up - Hyper Optimized Super Chains]]: Solana, Hyperliquid, and other fast, high throughput L1s
+- [[Scaling Out - Pure Multi-chain]]: Cosmos, before the introduction of Interchain Security
+- [[Scaling Out - Shared Economic Security]]: Polkadot
+- [[Scaling Out - Optimistic]] and [[Scaling Out - SNARKs]]: Primarily in Ethereum
+
+## Summary

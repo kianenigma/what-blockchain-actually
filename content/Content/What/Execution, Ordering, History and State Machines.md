@@ -80,12 +80,12 @@ Finally, we can introduce another useful mental model for blockchains, similar t
 So, to take our above example, $F(x, y) \rightarrow y\prime$, and model it as a state machine:
 - $F$ is the [[State Transition Function]] or [[STF]].
 - $y$ is the current state
-- $x$ is the *input* to the mutation
+- $x_1$ / $x_2$ are the *input* to the mutation
 - $y\prime$ is the new state
 
 ```mermaid
 graph LR
-y(("$$y$$")) -->|"$$F(x,y)$$"| yp(("$$y\prime$$")) -->|"$$F(x,y\prime)$$"| ypp(("$$y\prime\prime$$"))
+y(("$$y$$")) -->|"$$F(x_1,y)$$"| yp(("$$y\prime$$")) -->|"$$F(x_2,y\prime)$$"| ypp(("$$y\prime\prime$$"))
 ```
 ## Summary 
 This chapter was our first step towards a more concrete definition of blockchains. Within it, we modeled blockchains as a system that can do the following: 

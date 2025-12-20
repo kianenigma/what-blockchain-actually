@@ -26,9 +26,6 @@ export default ((opts?: Partial<BookPaginationOptions>) => {
     if (currentIndex === -1) {
       return null
     }
-    console.log(indexFile.links)
-    console.log(fileData.slug)
-    console.log(currentIndex)
 
     const prevSlug = currentIndex > 0 ? orderedSlugs[currentIndex - 1] : null
     const nextSlug = currentIndex < orderedSlugs.length - 1 ? orderedSlugs[currentIndex + 1] : null

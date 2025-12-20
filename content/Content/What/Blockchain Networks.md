@@ -93,7 +93,7 @@ A blockchain may have a closed set of nodes that perform the [[Consensus Algorit
 
 ### Two Layers of Networks
 - Notice how a single blockchain is a network of nodes that are being interconnect. 
-- But we also know that many blockchains exists in the world (Ethereum, Polkadot, NEAR, Bitcoin). Also, some blockchains have the ability to host other second-[[The Layers Terminology|layer]] (often called a layer-2 or L2) blockchains on top of them, such as [[Rollup]]s in Ethereum.
+- But we also know that many blockchains exists in the world (Ethereum, Polkadot, NEAR, Bitcoin)[^3].
 - This means that an ecosystem of blockchains is itself a broader network of blockchains. 
 - The common keyword for the technology that allows blockchain A to connect and exchange messages with blockchain B is called, unsurprisingly, a [[Bridge]].
 
@@ -106,7 +106,7 @@ As noted in the [[#RPC Node]] section, it useful for users to have the freedom t
 [^1]: See https://www.iog.io/news/to-slash-or-not-to-slash-that-is-the-blockchain-question.
 
 ### Block Times
-A small detail worth adding here, which will be useful in future chapters, is to know that most blockchains are constrained by producing blocks at **minimum** time intervals. High level, this is because if too many blocks are produced too quickly one after another, the possibility of [[Fork]]s increase. This can happen due to unpredictable network latencies. This is why blockchains often have a fixed [[Block Time]], meaning that new blocks have to come at least this much apart. For example, Polkadot and Ethereum operate on a 6s and 12s block time.
+A small detail worth adding here, which will be useful in future chapters, is to know that most blockchains are constrained by producing blocks at **minimum** time intervals. High level, this is because if too many blocks are produced too quickly one after another, the possibility of [[Fork]]s increase. This can happen due to unpredictable network latencies. This is why blockchains often have a fixed [[Block Time]], meaning that new blocks have to come at least this much apart. For example, Polkadot and Ethereum operate on a 6s and 12s block time respectively.
 
 > More advanced blockchains, and especially those that inherit their [[Trustless]] properties from a different source (called [[The Layers Terminology|layer 2]]) have more freedom to speed up their block times. Some highly optimized blockchains such as Solana also achieve much faster block times, with some tradeoffs.  
 
@@ -122,3 +122,5 @@ Secondly, we introduced [[#Light Node]]s and their important function a blockcha
 Finally, a number of auxiliary topics were discussed, such as how the [[#Journey Of a User Transaction]]. 
 
 [^2]: 
+
+[^3]: Also, some blockchains have the ability to host other second-[[The Layers Terminology|layer]] (often called a layer-2 or L2) blockchains on top of them, such as [[Rollup]]s in Ethereum, which is discussed in more detail in [[Evolution of Blockchain State Machines#Hosting Other Blockchains]].
