@@ -9,7 +9,7 @@ TODOs:
 - [x] Total time should only be in `Content`
 - [ ] Make I / we concise 
 - [ ] Single page PDF export
-- [ ] Fix order in file-tree and `Content` folder
+- [x] Fix order in file-tree and `Content` folder
 - [ ] Make edit to this page link
 - [ ] Published version
 - [x] First reference to each `Common` term.

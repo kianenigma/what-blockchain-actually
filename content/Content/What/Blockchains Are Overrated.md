@@ -103,7 +103,7 @@ The true learning here is that **blockchains are a means to an end**. The goal i
 Blockchain, as a data-structure *contributes* to this goal by giving us a system that allows the history to be recorded and audited in an efficient way, that's all.
 
 > [!tip]- Sneak peek
-> In [[The Bigger Picture]], we expand this take a step further, and explain how building these [[State Machine]]s that can do computation [[Trustless]] is also part of a bigger picture, and is not the only technology that we need for it.
+> In [[Content/What/The Bigger Picture]], we expand this take a step further, and explain how building these [[State Machine]]s that can do computation [[Trustless]] is also part of a bigger picture, and is not the only technology that we need for it.
 
 [^1]: or as we will learn much later, via [[Scaling Out - SNARKs]].
 [^3]: See [[Proof of Work and Proof of Stake]] for a bit more detailed explanation of how this is achieved. In short, it boils down to [[Economic Security]].

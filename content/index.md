@@ -18,9 +18,13 @@ book-index: true
 	- [[Evolution of Blockchain State Machines]]
 	- [[Properties Of Blockchain Systems]]
 	- [[The Bigger Picture]]
-	- [[Opinionated List Of Products And Why]]
 	- Appendix:
 		- [[Proof of Work and Proof of Stake]]
+		- [[Opinionated List Of Products And Why]]
+- Part 1 Summaries: 
+	- [[This Book In 1 Sentence]]
+	- [[This Book In 1 Paragraph]]
+	- [[This Book In 1 Page]]
 - Part 2: *How to scale* a blockchain network 
 	- [[Introduction - Why Scaling Matters]]
 	- [[Scaling Up - Hyper Optimized Super Chains]]
@@ -31,10 +35,6 @@ book-index: true
 - Part 3: Polkadot
 	- [[Polkadot]]
 	- [[JAM]]
-- Summaries: 
-	- [[This Book In 1 Sentence]]
-	- [[This Book In 1 Paragraph]]
-	- [[This Book In 1 Page]]
 - Part 4: Global Appendices
 	- Stuff that I wanted to learn more about, and I find them to be core pieces of the blockchain tech stack, with lots of room to grow more
 	- Bridges

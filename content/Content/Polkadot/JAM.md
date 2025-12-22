@@ -17,7 +17,7 @@ The second motivation for JAM is to cleanup a lot of technical debt from the pro
 
 While [[Polkadot]] managed to implement a fairly complex protocol, likely the first of its kinds in achieving heterogenous sharding with shared security, it has also accumulated a lot of technical debt and complexity in the protocol.
 ## [[Data Availability]] Accessible To Users 
-As it stands now, the [[Data Availability]] in Polkadot (and likely in Ethereum) is only used to store L2 block information. This is a bit ironic, as we know from [[The Bigger Picture#Storage]] that lack of storage primitives other than the blockchain [[State]] is one of the bottlenecks of building more [[Web3]] applications (other than more [[DeFi]] blockchains).
+As it stands now, the [[Data Availability]] in Polkadot (and likely in Ethereum) is only used to store L2 block information. This is a bit ironic, as we know from [[Content/What/The Bigger Picture#Storage]] that lack of storage primitives other than the blockchain [[State]] is one of the bottlenecks of building more [[Web3]] applications (other than more [[DeFi]] blockchains).
 
 Similar to the on-chain/in-core execution environment, JAM is recognizing that the [[Data Availability]] is another powerful primitive that should not only be used towards serving L2s, but should be accessible to developers as a primitive to store any information that they want in it. We already noted that the analog of an L2 in JAM is called a service. In JAM, service have free access to the [[Data Availability]] layer, to write whatever they want to it, and read whatever they want from it. 
 

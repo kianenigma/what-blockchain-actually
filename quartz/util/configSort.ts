@@ -3,7 +3,7 @@ import path from "path"
 import { QuartzPluginData } from "../plugins/vfile"
 import { simplifySlug } from "./path"
 
-const CONTENT_FOLDERS = ["What", "Scaling", "Polkadot", "Misc"] as const
+const CONTENT_FOLDERS = ["What", "Scaling", "Polkadot", "Misc", "Summaries"] as const
 
 /**
  * Read and parse index.md to extract ordered file links
