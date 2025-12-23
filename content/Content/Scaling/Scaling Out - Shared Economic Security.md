@@ -29,7 +29,7 @@ The above is almost identical to the current [[Polkadot]] architecture, which is
 ## Sharding Requirements
 A sharded blockchain as explained above would have some requirements in order to work correctly. First, note that in [[Scaling Out - Pure Multi-chain]] we don't need any special means; each blockchain in this model is its own island, and there is no extra infrastructure needed. This is mainly because the validator set of each shard is fully isolated from one another. But, for: 
 - [[Scaling Out - Shared Economic Security]]
-- [[Scaling Out - Optimistic]]
+- [[Scaling Out - Optimistic (Non-)Execution]]
 - [[Scaling Out - SNARKs]]
 We do need extra requirements, which are explained next.
 
@@ -49,7 +49,7 @@ Crucially, for the L2 to be able to achieve the last point above, it must:
 
 All blockchains and scaling methods implement [[Data Availability]] with more or less the same underlying approach, using [erasure coding](https://en.wikipedia.org/wiki/Erasure_code) and splitting the data among validators, ensuring that a subset can reconstruct it.
 
-The main differentiating factor among the chapter's scaling method, and upcoming ones is how the handle the re-verification part. We will discuss how [[Polkadot]] and NEAR do this next, and then move on to the next chapter to see how they happen in [[Scaling Out - Optimistic]] and [[Scaling Out - SNARKs]]. 
+The main differentiating factor among the chapter's scaling method, and upcoming ones is how the handle the re-verification part. We will discuss how [[Polkadot]] and NEAR do this next, and then move on to the next chapter to see how they happen in [[Scaling Out - Optimistic (Non-)Execution]] and [[Scaling Out - SNARKs]]. 
 ## Full Re-Execution 
 In this model, used in [[Polkadot]] and NEAR, the work done by the L2s is always re-executed by a subset of the L1 validators to ensure its correctness. To do so, two things must happen: 
 1. The L1 validators need to be able to reconstruct the L2 [[Block]] (or blocks, if multiple are being re-executed at the same time). This is done by the [[Data Availability]] system.
@@ -58,7 +58,7 @@ In this model, used in [[Polkadot]] and NEAR, the work done by the L2s is always
 ## Summary
 In the [[Scaling Out - Shared Economic Security]] model, the verification of the L2 work happens by the virtue of literally re-executing it enough times and by a subset of L1 validators, such that the probability of a fraud is effectively 0.
 
-Next, we will see how [[Scaling Out - Optimistic]] and [[Scaling Out - SNARKs]] use different approaches instead of this re-execution.
+Next, we will see how [[Scaling Out - Optimistic (Non-)Execution]] and [[Scaling Out - SNARKs]] use different approaches instead of this re-execution.
 
 [^1]: full paper [here](https://eprint.iacr.org/2024/961).
 [^2]: Search "L1 direct inclusion in Ethereum" to learn more.

@@ -11,7 +11,7 @@ Recall that so far we modeled authorities down to 3 components:
  
 Interestingly, this very much resembles what a computer program running on a hardware (like your laptop) does: 
 - The **code** of the program defines the **rules**
-- The code has access to a persistent **memory/storage** (**state**)
+- The code has access to a persistent **memory** (**state**)
 - Execution of the code updates the memory (**mutations**)
 	- Execution of the code may receive some user **input** to its execution
 

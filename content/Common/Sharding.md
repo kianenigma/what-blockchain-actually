@@ -2,7 +2,7 @@ A different keyword for Horizontal scaling -- see [[Introduction - Why Scaling M
 
 Approaches that use this: 
 - [[Scaling Out - SNARKs]]
-- [[Scaling Out - Optimistic]]
+- [[Scaling Out - Optimistic (Non-)Execution]]
 - [[Scaling Out - Pure Multi-chain]]
 - [[Scaling Out - Shared Economic Security]]
 

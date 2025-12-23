@@ -9,4 +9,4 @@
 - Blockchain as a **Computer**
 	- Memory (state)
 	- Code (rules)
-	- Input ([[Transaction]])
+	- Input ([[Block]]s and [[Transaction]]s within them)

@@ -7,8 +7,8 @@ book-index: true
 ## Table Of Content
 
 - [[Introduction]]
-- Part 1: 
-	- Goal: Clearly understand *what* blockchains do, and *why* it is novel, and under _which circumstances_ it can be _useful_. All without going into technicalities of *how* they do it. 
+- Part 1: What is a blockchain, actually?
+	- [[Part 1 Prelude]]
 	- [[What Is This All About?]]
 	- [[Blockchain-based Authorities]]
 	- [[Execution, Ordering, History and State Machines]]
@@ -18,25 +18,24 @@ book-index: true
 	- [[Evolution of Blockchain State Machines]]
 	- [[Properties Of Blockchain Systems]]
 	- [[The Bigger Picture]]
-	- Appendix:
-		- [[Proof of Work and Proof of Stake]]
-		- [[Opinionated List Of Products And Why]]
-- Part 1 Summaries: 
-	- [[This Book In 1 Sentence]]
-	- [[This Book In 1 Paragraph]]
-	- [[This Book In 1 Page]]
+	- Summaries: 
+		- [[This Book In 1 Sentence]]
+		- [[This Book In 1 Paragraph]]
+		- [[This Book In 1 Page]]
 - Part 2: *How to scale* a blockchain network 
 	- [[Introduction - Why Scaling Matters]]
 	- [[Scaling Up - Hyper Optimized Super Chains]]
 	- [[Scaling Out - Pure Multi-chain]]
 	- [[Scaling Out - Shared Economic Security]]
-	- [[Scaling Out - Optimistic]]
+	- [[Scaling Out - Optimistic (Non-)Execution]]
 	- [[Scaling Out - SNARKs]]
 - Part 3: Polkadot
 	- [[Polkadot]]
 	- [[JAM]]
 - Part 4: Global Appendices
 	- Stuff that I wanted to learn more about, and I find them to be core pieces of the blockchain tech stack, with lots of room to grow more
-	- Bridges
-	- TEEs
-	- Moon Math: FHE, ZK and MPC
+	- [[Proof of Work and Proof of Stake]]
+	- [[Bridge]]
+	- [[TEE]]
+	- [[Moon Math - ZK, FHE and MPC]]
+	- [[Opinionated List Of Products And Why]]

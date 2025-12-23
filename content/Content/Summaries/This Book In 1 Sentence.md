@@ -1,0 +1,1 @@
+Blockchain is one of the many tools and technologies that when combined together, leads to the creation of verifiably correct, globally accessible digital virtual computers, in the form of [[State Machine]]s, capable of performing computation and storing internal data about the computation they have done, and retaining a canonical order of its entire history.

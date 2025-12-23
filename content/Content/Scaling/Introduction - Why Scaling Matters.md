@@ -1,4 +1,4 @@
-This chapter of the book is entirely dedicated to giving you a high level understanding of the different methods used to scale blockchains. As noted in [[The Bigger Picture]], this topic was on the hot seat of [[Web3]] for many years, and lot has been done about it. 
+This part of the book is entirely dedicated to giving you a high level understanding of the different methods used to scale blockchains. As noted in [[The Bigger Picture]], this topic was on the hot seat of [[Web3]] for many years, and lot has been done about it. 
 
 We did argue that scaling is likely no longer the frontier issue of [[Web3]], but nonetheless it is very useful to understand how blockchains scale their computational and storage capacities.
 
@@ -49,7 +49,7 @@ Before going to the next chapters and discussing different approaches, it is wor
 - [[Scaling Up - Hyper Optimized Super Chains]]: Solana, Hyperliquid, and other fast, high throughput L1s
 - [[Scaling Out - Pure Multi-chain]]: Cosmos, before the introduction of Interchain Security
 - [[Scaling Out - Shared Economic Security]]: Polkadot
-- [[Scaling Out - Optimistic]] and [[Scaling Out - SNARKs]]: Primarily in Ethereum
+- [[Scaling Out - Optimistic (Non-)Execution]] and [[Scaling Out - SNARKs]]: Primarily in Ethereum
 ## Summary
 Sequential blockchains operate as such: Entire validators set must work in coordination for a period of time known as [[Block Time]] to process one package of work, a [[Block]]. Different scaling methods discussed in the upcoming chapters are ways to extract more work out of this group of validators.
 
