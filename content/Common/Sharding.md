@@ -1,6 +1,6 @@
 A different keyword for Horizontal scaling -- see [[Introduction - Why Scaling Matters#Vertical and Horizontal Scaling]].
 
-Approaches that use this: 
+Approaches that use this:
 - [[Scaling Out - SNARKs]]
 - [[Scaling Out - Optimistic (Non-)Execution]]
 - [[Scaling Out - Pure Multi-chain]]

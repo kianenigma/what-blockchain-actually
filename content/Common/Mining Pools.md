@@ -1,1 +1,1 @@
-Ability for a group of [[Proof of Work and Proof of Stake]] [[Miners|Miners]] to come together and form a single more powerful miner. 
+Ability for a group of [[Proof of Work and Proof of Stake]] [[Miners|Miners]] to come together and form a single more powerful miner.

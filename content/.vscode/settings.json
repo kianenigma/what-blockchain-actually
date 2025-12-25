@@ -1,0 +1,13 @@
+
+{
+	"workbench.colorCustomizations": {
+		"diffEditor.insertedTextBackground": "#02b40b",  // set to transparent
+		"diffEditor.removedTextBackground": "#a10000",   // set to transparent
+		"diffEditor.insertedLineBackground": "#0000",
+		"diffEditor.removedLineBackground": "#0000",
+		// "diffEditorGutter.insertedLineBackground": "#223368ff",
+		// "diffEditorGutter.removedLineBackground": "#72336aff",
+		// "diffEditorOverview.insertedForeground": "#02b40b",
+		// "diffEditorOverview.removedForeground": "#a10000"
+	}
+}

@@ -1,5 +1,5 @@
-The property of us believing an [[Authority]] behaves according to some known rules. [[#Science-based Trust]] is also called [[Trustless]], as it relies on no [[#Human-based Trust]]. See [[Less Trust, More Truth]]. 
-Trust can be categorized into the following: 
+The property of us believing an [[Authority]] behaves according to some known rules. [[#Science-based Trust]] is also called [[Trustless]], as it relies on no [[#Human-based Trust]]. See [[Less Trust, More Truth]].
+Trust can be categorized into the following:
 ## Human-based Trust
 - **Corruptible**: What is expected to happen might not happen at all, or something else might happen.
 - **Not auditable**: Records of what was done in the past may or may not be available.

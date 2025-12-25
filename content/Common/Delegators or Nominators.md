@@ -2,4 +2,4 @@ Entities in a [[Proof of Work and Proof of Stake#Proof of Stake]] network that c
 
 [[Proof of Work and Proof of Stake#Proof of Stake]] networks that allow this are called Delegated/Nominated Proof of Stake networks.
 
-By convention, when an entity can just chose one validator to back, it is called **Delegation**. When multiple parties can be selected, it is called **Nomination**. Ideally, in Nominated Proof of Stake, an optimization process can split the total stake of a nominator 
+By convention, when an entity can just chose one validator to back, it is called **Delegation**. When multiple parties can be selected, it is called **Nomination**. Ideally, in Nominated Proof of Stake, an optimization process can split the total stake of a nominator

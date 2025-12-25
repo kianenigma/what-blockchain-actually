@@ -1,2 +1,2 @@
-- **Onchain:** The work done by the [[Validator]] group of a blockchain, which leads to the execution of the [[STF]] and the [[State]] of the blockchain to get updated. All of this work happens within the [[Consensus Algorithm]]'s umbrella and is guaranteed to be [[Trustless]] and secure. 
-- Offchain: Any other work that is done outside 
+- **Onchain:** The execution of the [[STF]] of a blockchain, done by the [[Validator]] set, which leads to the [[State]] of the blockchain being updated. All of this work happens within the [[Consensus Algorithm]]'s umbrella and is guaranteed to be [[Trustless]] and secure.
+- Offchain: Any other work that is done outside of the above. Examples:

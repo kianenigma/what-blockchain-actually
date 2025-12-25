@@ -1,7 +1,7 @@
 - Blockchain as **Authority**
-	- State 
+	- State
 	- Rules of the authority
-	- Mutation 
+	- Mutation
 - Blockchain as **Deterministic state machine**
 	- State
 	- State transition function

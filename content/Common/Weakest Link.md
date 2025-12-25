@@ -2,15 +2,15 @@
 dg-hide: true
 dg-publish: true
 ---
-The strength of any chain is only as strong as its weakest link. 
+The strength of any chain is only as strong as its weakest link.
 
-While a useful term in the industries that work with an actual chain, the analogy can be expanded to composite (digital) systems with interdependent constituents as well. 
+While a useful term in the industries that work with an actual chain, the analogy can be expanded to composite (digital) systems with interdependent constituents as well.
 
 ```mermaid
 graph LR
 	classDef smallNode font-size:10px
 	C0[Strong Link] --> C1[Weak Link] --> C2[Strong Link]
-	
+
 	C1:::smallNode
 ```
 

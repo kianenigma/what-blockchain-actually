@@ -32,10 +32,10 @@ book-index: true
 - Part 3: Polkadot
 	- [[Polkadot]]
 	- [[JAM]]
-- Part 4: Global Appendices
-	- Stuff that I wanted to learn more about, and I find them to be core pieces of the blockchain tech stack, with lots of room to grow more
+- Part 4: Appendices
+	- Topics that were mentioned in the above chapters, deserve a long description, but don't fit anywhere above.
 	- [[Proof of Work and Proof of Stake]]
-	- [[Bridge]]
+	- [[Bridges And Cross Chain Messaging]]
 	- [[TEE]]
-	- [[Moon Math - ZK, FHE and MPC]]
+	- [[Moon Math - ZKP, FHE and MPC]]
 	- [[Opinionated List Of Products And Why]]
