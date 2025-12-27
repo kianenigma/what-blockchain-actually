@@ -1,5 +1,5 @@
 ---
-Description: Splitting a blockchain into multiple blockchains sophisticatedly with preserving the overall economic security.
+description: Splitting a blockchain into multiple blockchains sophisticatedly with preserving the overall economic security.
 ---
 
 Then, [[Polkadot]] drew upon the limitations of [[Scaling Out - Pure Multi-chain]] and proposed a new solution:

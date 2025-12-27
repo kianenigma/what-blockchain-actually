@@ -20,7 +20,7 @@ const config: QuartzConfig = {
     },
     locale: "en-US",
     baseUrl: "blog.kianenigma.com/what-blockchain-actually",
-    ignorePatterns: ["private", "templates", ".obsidian", "Resources"],
+    ignorePatterns: ["private", "templates", ".obsidian", "**/*.excalidraw.md",],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
@@ -99,6 +99,8 @@ const config: QuartzConfig = {
       Plugin.NotFoundPage(),
       // Comment out CustomOgImages to speed up build time
       Plugin.CustomOgImages(),
+      Plugin.LLMTxt(),
+      Plugin.RobotsTxt(),
     ],
   },
 }

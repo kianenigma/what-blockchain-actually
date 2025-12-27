@@ -1,5 +1,5 @@
 ---
-Description: How blockchains act as authorities for digital interactions.
+description: How blockchains act as authorities for digital interactions.
 ---
 
 [[What Is This All About?]] introduced the idea of [[Trust]] and [[Authority]]. We described how Bitcoin creates a trustworthy digital bank, and how Ethereum is creating a trustworthy global computer that can perform general computations. Yet, we closed the chapter by acknowledging that there are limitations to this model. In this chapter, we will learn what those limitations are. But first, let's establish a mental model for how an [[Authority]] works.

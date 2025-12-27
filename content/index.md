@@ -1,6 +1,6 @@
 ---
 title: What Is Blockchain, Actually?
-Description: What does a blockchain actually do?
+description: What does a blockchain actually do?
 book-index: true
 ---
 ## Table Of Content
@@ -17,11 +17,11 @@ book-index: true
 	- [[Evolution of Blockchain State Machines]]
 	- [[Properties Of Blockchain Systems]]
 	- [[The Bigger Picture]]
-	- Summaries: 
+	- Summaries:
 		- [[This Book In 1 Sentence]]
 		- [[This Book In 1 Paragraph]]
 		- [[This Book In 1 Page]]
-- Part 2: *How to **scale*** a blockchain network 
+- Part 2: *How to **scale*** a blockchain network
 	- [[Introduction - Why Scaling Matters]]
 	- [[Scaling Up - Hyper Optimized Super Chains]]
 	- [[Scaling Out - Pure Multi-chain]]

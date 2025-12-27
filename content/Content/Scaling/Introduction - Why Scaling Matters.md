@@ -1,5 +1,5 @@
 ---
-Description: Introduction to scaling blockchains and why it mattered/matters.
+description: Introduction to scaling blockchains and why it mattered/matters.
 ---
 
 This part of the book is entirely dedicated to giving you a high-level understanding of the different methods used to scale blockchains. As noted in [[The Bigger Picture]], this topic was on the hot seat of [[Web3]] for many years, and a lot has been done about it.

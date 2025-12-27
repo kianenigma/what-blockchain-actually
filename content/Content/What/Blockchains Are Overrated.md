@@ -1,5 +1,5 @@
 ---
-Description: Blockchain network is a misnomer, as blockchains play a very small role in it.
+description: Blockchain network is a misnomer, as blockchains play a very small role in it.
 ---
 
 We have learned a fair bit about blockchains thus far. Moreover, we know by now that when we say _blockchain_, we actually mean a _network of nodes_ that are all interconnected and are utilizing various systems together to achieve what can ultimately be abstracted away as a [[Blockchain Models|(world) computer]] that is free of human-based trust and therefore [[Trustless]]. What were those properties again?

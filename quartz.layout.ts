@@ -46,7 +46,10 @@ export const defaultContentPageLayout: PageLayout = {
     }),
   ],
   right: [
-    Component.Graph(),
+    Component.ConditionalRender({
+      component: Component.Graph(),
+      condition: (page) => page.fileData.slug === "index",
+    }),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.ConditionalRender({
       component: Component.FirstBacklink(),
@@ -59,7 +62,10 @@ export const defaultContentPageLayout: PageLayout = {
       component: Component.Backlinks(),
       condition: (page) => page.fileData.slug !== "index",
     }),
-    Component.GithubControls(),
+    Component.ConditionalRender({
+      component: Component.GithubControls(),
+      condition: (page) => page.fileData.slug !== "index",
+    }),
   ],
 }
 

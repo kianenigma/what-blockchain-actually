@@ -1,5 +1,5 @@
 ---
-Description: Brief description of JAM and parts of it that matter in the context of this book.
+description: Brief description of JAM and parts of it that matter in the context of this book.
 ---
 
 ![[jam-pen-polkadot.png]]

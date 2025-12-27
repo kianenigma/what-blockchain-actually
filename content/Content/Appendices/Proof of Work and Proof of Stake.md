@@ -1,5 +1,5 @@
 ---
-Description: More details about how proof of work and stake work and achieve economic security.
+description: More details about how proof of work and stake work and achieve economic security.
 ---
 
 ## Introduction

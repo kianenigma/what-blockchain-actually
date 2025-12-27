@@ -1,5 +1,5 @@
 ---
-Description: A high level description of what the whole blockchain industry is about.
+description: A high level description of what the whole blockchain industry is about.
 ---
 
 ## Owning Digital Money

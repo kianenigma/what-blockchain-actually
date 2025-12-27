@@ -1,5 +1,5 @@
 ---
-Description: How independent blockchains send messages to one another and communicate.
+description: How independent blockchains send messages to one another and communicate.
 ---
 
 Bridges are the primary way through which blockchains send messages to one another. These messages could also originate from tenants of each blockchain, for example a smart contract in blockchain A sending a message to a smart contract on blockchain B. Considering what we have learned about blockchain in this book, the scenarios that we are familiar with and need a bridge are:

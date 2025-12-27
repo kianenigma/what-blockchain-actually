@@ -1,5 +1,5 @@
 ---
-Description: Brief description of Polkadot and parts of it that matter in the context of this book.
+description: Brief description of Polkadot and parts of it that matter in the context of this book.
 ---
 
 As noted in the [[Introduction]], most of my background knowledge that led to this book comes from working on Polkadot for many years. A large number of blog posts and talks on my [website](https://blog.kianenigma.com/) are about Polkadot. Therefore, I don't feel compelled as much to talk any further about Polkadot in this book. Moreover, the goal of this book is by no means to teach you Polkadot, but rather give you a ground-up understanding of what blockchains are (part 1) and how they scale (part 2), among a few other important topics.

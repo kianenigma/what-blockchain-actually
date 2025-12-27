@@ -1,5 +1,5 @@
 ---
-Description: How the blockchain state machine has evolved over time and has become more developer friendly and extensible.
+description: How the blockchain state machine has evolved over time and has become more developer friendly and extensible.
 ---
 
 Our chapters so far have looked like this: we started with a set of conceptual explanations:

@@ -1,5 +1,5 @@
 ---
-Description: 3 of the most prominent branches of new cryptography used in blockchains.
+description: 3 of the most prominent branches of new cryptography used in blockchains.
 ---
 
 
@@ -32,7 +32,7 @@ An idealistic use case of FHEs could be AI inference; suppose I have a model and
 Multi-party computation is in some sense a distributed analog of [[#FHE - Fully Homomorphic Encryption]], where instead of pure cryptography, the computation is done collaboratively by a group of MPC nodes. Each node only sees a subset of the data and performs their share of the computation without being able to reconstruct the whole data.
 
 ## Programmable Cryptography
-Ultimately, the outcome of the 3 is also sometimes called (other than the fancy "moon math"): programmable cryptography. This is because we are seeing a similar trend as to what we saw in [[Evolution of Blockchain State Machines]] in these cryptographic primitives as well. 
+Ultimately, the outcome of the 3 is also sometimes called (other than the fancy "moon math"): programmable cryptography. This is because we are seeing a similar trend as to what we saw in [[Evolution of Blockchain State Machines]] in these cryptographic primitives as well.
 
 A decade ago, ZCash already managed to use the very same [[#ZKP - Zero Knowledge Proofs]] to create private token transfers on its blockchains. But neither the blockchain, not the cryptographic primitives were programmable. Today, ZK-VMs like Risc-0 allow you to write any applications, in modern languages like Rust, and generate a proof of it while it is being executed. Similarly, there are ZK-EVMs, that allow the execution of EVM byte-code while generating a proof for it.
 ## Examples

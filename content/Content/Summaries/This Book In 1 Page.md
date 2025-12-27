@@ -1,5 +1,5 @@
 ---
-Description: Summary of part 1 in 1 page.
+description: Summary of part 1 in 1 page.
 ---
 
 ## Blockchains

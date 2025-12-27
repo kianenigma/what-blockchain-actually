@@ -1,5 +1,5 @@
 ---
-Description: What properties does the blockchain system as we have learned so far has?
+description: What properties does the blockchain system as we have learned so far has?
 ---
 
 All of the chapters so far have given us a solid foundation to understand *what* blockchain systems can do, and to a limited extent, *how* they do it. In the remaining closing chapters of part 1, we will zoom back and evaluate the bigger picture.

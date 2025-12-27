@@ -37,6 +37,7 @@ export const Assets: QuartzEmitterPlugin = () => {
     async *partialEmit(ctx, _content, _resources, changeEvents) {
       for (const changeEvent of changeEvents) {
         const ext = path.extname(changeEvent.path)
+        // Skip markdown files and excalidraw files (they're converted to SVGs)
         if (ext === ".md") continue
 
         if (changeEvent.type === "add" || changeEvent.type === "change") {

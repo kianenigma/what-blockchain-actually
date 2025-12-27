@@ -1,5 +1,5 @@
 ---
-Description: Few important blockchain terminology.
+description: Few important blockchain terminology.
 ---
 
 So much has been said about how to [[Blockchain Models|model]] blockchains in abstract terms in [[Execution, Ordering and History]], and what properties they have. But it is finally time to define a few concrete keywords about blockchains. Establishing these keywords now will also make reading the next chapters smoother, as a reader would have concrete terms to refer to something (e.g., a block, transaction, or header).

@@ -1,5 +1,5 @@
 ---
-Description: How a network of nodes come together to form a distributed network, called the blockchain network.
+description: How a network of nodes come together to form a distributed network, called the blockchain network.
 ---
 
 [[Blocks, Transactions, And Blockchain Systems]] finished by introducing an important component: blockchain node software. This is because a blockchain is, in fact, a _network_ of entities, each running _node software_ that interconnects wiht other. These nodes then play different roles at different times. In this chapter, we will look at these roles and see what each does at specific times. Notably, we should learn exactly which nodes (and when) execute the [[STF]].

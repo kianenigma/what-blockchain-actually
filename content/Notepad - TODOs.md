@@ -3,12 +3,13 @@ draft: true
 ---
 
 TODOs:
-- [ ] LLM optimization
+- [x] LLM optimization
 - [x] Add a part: x chapter: y frontmatter to all notes, and sort based on it
 - [x] Latex export
 - [x] Total time should only be in `Content`
 - [ ] Make I / we concise 
 - [ ] Single page PDF export
+- [ ] new README, Code of Conduct, License, etc
 - [x] Fix order in file-tree and `Content` folder
 - [x] Make edit to this page link
 - [x] Ask question link
@@ -16,6 +17,7 @@ TODOs:
 - [ ] Favicon
 - [x] Description for pages
 - [ ] OG image
+- [x] Remove raw excalidraw files from sitemap and everything.
 - [x] Review all common
 - [x] First reference to each `Common` term.
 
