@@ -1,0 +1,1 @@
+A common keyword used for the very first [[Block]] and [[Block Header]] in a blockchain. This block is pre-defined and hardcoded by all network participants

@@ -1,3 +1,7 @@
+---
+Description: Zoom out and see the big-picture mission of blockchains.
+---
+
 To start this chapter, I will begin with a personal interpretation of the [[Web3]] space's history so far.
 
 I believe the space started with Bitcoin, which demonstrated that the basis of this technology, [[Trustless]] money, works. And soon after, Ethereum expanded this into a more general trustless [[State Machine]] that allows for more general forms of computation to happen [[Onchain and Offchain|onchain]] (aka. [[Trustless]]ly).

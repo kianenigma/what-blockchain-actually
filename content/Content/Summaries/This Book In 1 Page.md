@@ -1,3 +1,6 @@
+---
+Description: Summary of part 1 in 1 page.
+---
 
 ## Blockchains
 Blockchains are overrated. In literal terms, they are just a data structure. If combined with other technologies, they can together provide a [[Trustless]] [[State Machine]]. This final system can be [[Blockchain Models|modeled]] as a global computer:

@@ -1,7 +1,4 @@
-
 [Commoditization - Wikipedia](https://en.wikipedia.org/wiki/Commoditization)
-
-TODO: study the process of commoditization of a few more things. There has always been some abuse at first, but eventually it is a step forward for humanity.
 
 A few further examples of this:
 - People easily created multiple variants of Bitcoin itself

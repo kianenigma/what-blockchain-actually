@@ -1,3 +1,7 @@
+---
+Description: Introduction to scaling blockchains and why it mattered/matters.
+---
+
 This part of the book is entirely dedicated to giving you a high-level understanding of the different methods used to scale blockchains. As noted in [[The Bigger Picture]], this topic was on the hot seat of [[Web3]] for many years, and a lot has been done about it.
 
 We did argue that scaling is likely no longer the frontier issue of [[Web3]], but nonetheless it is very useful to understand how blockchains scale their computational and storage capacities.

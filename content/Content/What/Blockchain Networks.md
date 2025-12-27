@@ -1,3 +1,7 @@
+---
+Description: How a network of nodes come together to form a distributed network, called the blockchain network.
+---
+
 [[Blocks, Transactions, And Blockchain Systems]] finished by introducing an important component: blockchain node software. This is because a blockchain is, in fact, a _network_ of entities, each running _node software_ that interconnects wiht other. These nodes then play different roles at different times. In this chapter, we will look at these roles and see what each does at specific times. Notably, we should learn exactly which nodes (and when) execute the [[STF]].
 
 The ultimate purpose of the participants of this network is to come to a consensus about what the final [[State]] of the blockchain is and what the sequence of events (or [[Block]]s, as we learned in the previous chapter) was that led to this particular state. The umbrella term used to define the set of algorithms that dictate the above is the [[Consensus Algorithm]] of a blockchain.
@@ -36,7 +40,7 @@ Other things checkers typically do that are not mentioned above:
 - Any other checks specific to that blockchain.
 
 > [!tip] Misbehavior
-> It is worth adding that the consequence of an author producing an invalid block (among other misbehaviors) is also different depending on the [[Consensus Algorithm]]. Some resort to actively slashing some funds from the block author, while others don't have an active means of slashing and assume the social effects of being publicly known to misbehave and other factors are severe enough to prevent such attacks [^1].
+> It is worth adding that the consequence of an author producing an invalid block (among other misbehaviors) is also different depending on the [[Consensus Algorithm]]. Some resort to actively [[Slashing]] some funds from the block author, while others don't have an active means of slashing and assume the social effects of being publicly known to misbehave and other factors are severe enough to prevent such attacks [^1].
 
 > [!note] Validators
 > The combination of authors and checkers is often called the [[Validator]] group of the blockchain. Ultimately, the work done by this group of nodes is considered highly [[Trustless]]. Moreover, the work done by this group is called [[Onchain and Offchain|onchain execution]], while anything else is called *offchain*.
@@ -45,7 +49,7 @@ Other things checkers typically do that are not mentioned above:
 ## Full Node
 Full nodes are the ones that are following the work of the authors by re-executing the [[STF]] based on proposed blocks, but don't actively participate in the creation of new blocks and don't play any significant role in the [[Consensus Algorithm]].
 
-For a network to be [[Trustless]], it is of the utmost importance for full node software to be available, not need sophisticated hardware to run on, and be able to successfully sync the entire blockchain from genesis all the way to the tip of the chain.
+For a network to be [[Trustless]], it is of the utmost importance for full node software to be available, not need sophisticated hardware to run on, and be able to successfully sync the entire blockchain from [[Genesis]] all the way to the tip of the chain.
 
 This would consequently allow anyone to verify any (old) state (e.g. *how much BTC I had a year ago, and today?*), which was one of the properties of [[Trust#Science-based Trust]].
 ## Archive Nodes

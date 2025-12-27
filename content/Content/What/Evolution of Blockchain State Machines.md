@@ -1,16 +1,20 @@
+---
+Description: How the blockchain state machine has evolved over time and has become more developer friendly and extensible.
+---
+
 Our chapters so far have looked like this: we started with a set of conceptual explanations:
 - [[What Is This All About?]]
 - [[Blockchain-based Authorities]]
-- [[Execution, Ordering, History and State Machines]]
+- [[Execution, Ordering and History]]
 
 And then we pivoted for a few chapters to explaining concrete blockchain concepts:
 - [[Blocks, Transactions, And Blockchain Systems]]
 - [[Blockchain Networks]]
 - [[Blockchains Are Overrated]]
 
-This chapter is essentially a continuation of [[Execution, Ordering, History and State Machines]], but it came with a gap, in order to provide readers with more specific knowledge about blockchains first.
+This chapter is essentially a continuation of [[Execution, Ordering and History]], but it came with a gap, in order to provide readers with more specific knowledge about blockchains first.
 
-In [[Execution, Ordering, History and State Machines]], we modeled a blockchain as a [[State Machine]] (or a computer) whose execution is [[Trustless]], fully or partially depending on the implementation. In this chapter, we will look at the evolution of these state machines and see what applications have so far been encoded in them.
+In [[Execution, Ordering and History]], we modeled a blockchain as a [[State Machine]] (or a computer) whose execution is [[Trustless]], fully or partially depending on the implementation. In this chapter, we will look at the evolution of these state machines and see what applications have so far been encoded in them.
 
 This evolution can be categorized into two different eras:
 - [[#Fixed State Machine]]

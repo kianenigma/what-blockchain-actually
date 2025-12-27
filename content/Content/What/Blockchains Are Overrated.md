@@ -1,3 +1,7 @@
+---
+Description: Blockchain network is a misnomer, as blockchains play a very small role in it.
+---
+
 We have learned a fair bit about blockchains thus far. Moreover, we know by now that when we say _blockchain_, we actually mean a _network of nodes_ that are all interconnected and are utilizing various systems together to achieve what can ultimately be abstracted away as a [[Blockchain Models|(world) computer]] that is free of human-based trust and therefore [[Trustless]]. What were those properties again?
 
 ![[Trust#Science-based Trust]]
@@ -6,7 +10,7 @@ This chapter will then revise these three properties (and to some extent explain
 ## Recap of Blockchains Being [[Trustless]]
 ### Verifiable
 - Blockchain systems ultimately have an [[STF]]. It declares *what* they are. In other words, what we should *expect them to do*. If the STF says this is a DEX, then it is a DEX. If the STF says it is a ponzi token, then it is a ponzi token. What blockchains achieve is **verifiable execution** of that said STF.
-- This is achieved through the rules of the [[Consensus Algorithm]], incentivizing correct execution of STF and slashing those who do otherwise[^3]. So, we have this [[TEE]]-like, magic global computer that will always execute its STF correctly no matter what.
+- This is achieved through the rules of the [[Consensus Algorithm]], incentivizing correct execution of STF and [[Slashing]] those who do otherwise[^3]. So, we have this [[TEE]]-like, magic global computer that will always execute its STF correctly no matter what.
 - This correct execution of the STF can be verified by anyone monitoring the network.
 - This gives us the **verifiability** that we named as the first two properties of science-based trust.
 ### Auditable History
@@ -103,7 +107,7 @@ The true learning here is that **blockchains are a means to an end**. The goal i
 Blockchain, as a data structure, *contributes* to this goal by giving us a system that allows the history to be recorded and audited in an efficient way; that's all.
 
 > [!tip]- Sneak peek
-> In [[Content/What/The Bigger Picture]], we take this a step further and explain how building these [[State Machine]]s that can do computation [[Trustless]]ly is also part of a bigger picture and is not the only technology that we need for it.
+> In [[The Bigger Picture]], we take this a step further and explain how building these [[State Machine]]s that can do computation [[Trustless]]ly is also part of a bigger picture and is not the only technology that we need for it.
 
 [^1]: or as we will learn much later, via [[Scaling Out - SNARKs]].
 [^3]: See [[Proof of Work and Proof of Stake]] for a bit more detailed explanation of how this is achieved. In short, it boils down to [[Economic Security]].

@@ -1,3 +1,7 @@
+---
+Description: Brief description of Polkadot and parts of it that matter in the context of this book.
+---
+
 As noted in the [[Introduction]], most of my background knowledge that led to this book comes from working on Polkadot for many years. A large number of blog posts and talks on my [website](https://blog.kianenigma.com/) are about Polkadot. Therefore, I don't feel compelled as much to talk any further about Polkadot in this book. Moreover, the goal of this book is by no means to teach you Polkadot, but rather give you a ground-up understanding of what blockchains are (part 1) and how they scale (part 2), among a few other important topics.
 
 That being said, this brief chapter is my tribute to Polkadot within the context of this book, and the next chapter [[JAM]] explains what is to come for Polkadot in the coming years. While doing so, I will do my best to explain Polkadot in the language of this book to you, making it one useful example to solidify what we have already learned. So, in some sense, this chapter is leveraging Polkadot as a case study to recap many of the things that have been said so far.

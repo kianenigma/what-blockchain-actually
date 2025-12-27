@@ -1,3 +1,3 @@
-A system present in all [[Sharding|sharded]] blockchains that allows the [[Block]]s produced in the L2 can be reconstructed by the L1 [[Validator]]s.
+A system present in all [[Sharding|sharded]] blockchains that allows some data to be securely stored collaboratively among the validators. This is often used in to store [[Block]]s produced in the L2 in the L1, so that thye can be reconstructed by the L1 [[Validator]]s later for further inspection. [[JAM]] is the first blockchain that is attempting to use this technology for broader use-cases. 
 
 The Data Availability is a secure and short term storage; data stored in the L1 is often available for a fixed period of time (2-4 weeks), and it no history is kept for it.

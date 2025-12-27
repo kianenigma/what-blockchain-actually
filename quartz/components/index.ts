@@ -26,6 +26,7 @@ import ConditionalRender from "./ConditionalRender"
 import BookPagination from "./BookPagination"
 import BookFooter from "./BookFooter"
 import FirstBacklink from "./FirstBacklink"
+import GithubControls from "./GithubControls"
 
 export {
   ArticleTitle,
@@ -56,4 +57,5 @@ export {
   BookPagination,
   BookFooter,
   FirstBacklink,
+  GithubControls,
 }

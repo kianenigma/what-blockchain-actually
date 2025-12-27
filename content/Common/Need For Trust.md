@@ -1,4 +1,4 @@
-We need [[Authority]] and [[Trust]], because of our **scale**: We are simply too many humans to be able to directly trust one another.
+We need [[Authority]] and [[Trust]], because of our **scale**: We are simply too many humans, all interconnected by the internet and an ever more globalized world, to be able to directly trust one another.
 
 Consider the following:
 - In a group 4 friends, we blindly trust each other based on personal knowledge, even if there is money involved.

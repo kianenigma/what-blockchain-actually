@@ -1,12 +1,13 @@
-The broad term used to describe common properties of blockchain-based systems and [[Trust#Human-based Trust]]. Since all of the sources of [[Trust]] are rooted in known branches of science, can be publicly verified and examined, it is (paradoxically) said to be *Trust-less*.
+The broad term used to describe common properties of blockchain-based systems and [[Trust#Science-based Trust]]. Since all of the sources of [[Trust]] are rooted in known branches of science, can be publicly verified and examined, it is (paradoxically) said to be *Trust-less*.
 
 ![[Trust#Science-based Trust]]
 
 Also see [[Less Trust, More Truth]].
 
-In many blockchain contexts, trustless is simply called "decentralized".
+In many blockchain contexts, trustless is simply called "**decentralized**".
 
-Ultimately, my choice of terminology of "trustless" and limiting it to the above 3 properties is an opinionated decision here to keep the content of this book concise. Different people have more broad explanations around it, some of which that I know are:
+## Confession on Naming 
+Ultimately, my choice of the word **trustless** and limiting it to the above **3 properties** is an opinionated decision here to keep the content of this book concise. Different people have more broad explanations for the same concept. Some of the most important ones are:
 - Vitalik's named [values for Ethereum](https://vitalik.eth.limo/general/2023/12/28/cypherpunk.html)
 	- Open global participation
 	- Decentralization

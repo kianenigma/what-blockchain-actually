@@ -1,3 +1,7 @@
+---
+Description: ZK rollups and how they work.
+---
+
 SNARK stands for **S**uccinct **N**on-interactive **AR**gument of **K**nowledge. It is a branch of cryptography that allows proofs of some computation to be generated, allowing another entity to verify its correctness. Once this is done without leaking any information about *what* that computation was, it is called **Z**ero-**K**nowledge, or ZK-SNARK.
 
 So, there are three properties to SNARKs that are interesting:

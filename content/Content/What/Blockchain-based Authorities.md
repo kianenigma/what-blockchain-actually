@@ -1,6 +1,10 @@
+---
+Description: How blockchains act as authorities for digital interactions.
+---
+
 [[What Is This All About?]] introduced the idea of [[Trust]] and [[Authority]]. We described how Bitcoin creates a trustworthy digital bank, and how Ethereum is creating a trustworthy global computer that can perform general computations. Yet, we closed the chapter by acknowledging that there are limitations to this model. In this chapter, we will learn what those limitations are. But first, let's establish a mental model for how an [[Authority]] works.
 ## State and Mutation
-Most authorities can be abstracted as two functions: they hold value-bearing and (often contentious) ***state*** (information), and they perform ***mutations*** (updates) upon that state based on a well-known set of **rules**.
+Most authorities can be abstracted as two functions: they hold value-bearing and (often [[Blockchain and Contention|contentious]]) ***state*** (information), and they perform ***mutations*** (updates) upon that state based on a well-known set of **rules**.
 
 ```mermaid
 flowchart
@@ -57,7 +61,7 @@ Digital state is a great fit for blockchains, since it can be easily mutated by 
 
 While we can strive to solve the [[Oracle Problem]] in a [[Trustless]] manner, turning a blind eye to it is defying the whole purpose of why the [[Web3]] industry exists, and why it managed to attract so many early adopters.
 
-In the next chapter, [[Execution, Ordering, History and State Machines]], we build on top of the three properties of blockchains that we know about:
+In the next chapter, [[Execution, Ordering and History]], we build on top of the three properties of blockchains that we know about:
 - State
 - Mutations + rules of mutations
 and present more concrete mental models for blockchains.

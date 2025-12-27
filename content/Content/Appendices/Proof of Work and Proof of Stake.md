@@ -1,3 +1,7 @@
+---
+Description: More details about how proof of work and stake work and achieve economic security.
+---
+
 ## Introduction
 These two topics did not fit into the overall flow of the writing thus far and therefore have been moved to this separate appendix. Knowing them is useful, as they are an important part of the history of blockchains. Moreover, they shed a bit of light into _how_ blockchains manage to deliver some of their [[Trustless]] properties, namely [[Economic Security]].
 ## Proof of Work
@@ -31,7 +35,7 @@ Finally, to elaborate a bit more on why we consider Bitcoin to be [[Trustless]] 
 In other words, in proof-of-stake:
 - Any participant in the network that wishes to author new blocks is asked to lock an amount of capital in a vault inside the protocol.
 - In the event that it is known that they misbehaved, this capital is fully or partially **slashed**.
-- The tokens in the above condition are said to be [[Staked Tokens|Staked]].
+- The tokens in the above condition are said to be [[Staked Token|Staked]].
 - Most Proof of Stake networks utilize their own value-bearing tokens (e.g. ETH) to be staked; therefore, the act of "*Staking*" is usually named as one of the utilities of that token. In principle, though, the staked token can be anything that bears value, even USDT.
 - Similar to proof-of-work, to attack a proof-of-stake network, an attacker must control a [[Byzantine Threshold]] of the tokens that are staked, or else their attack would only lead to a loss of funds for the attacker.
 
@@ -39,13 +43,13 @@ In a very similar manner to [[Proof of Work and Proof of Stake]], Proof of Stake
 ## Note on Distribution of New Blocks Among Authors
 Many proof of work networks tout the fact that anyone can be a block author in these networks, leading to a more [[Trustless]] system. Yet, note that the likelihood of me being able to produce a block in Bitcoin today from my computer, even though I can try and do it, is practically zero. The likelihood is proportional to the [[Economic Security]] (aka. hash power) that I provide.
 
-Proof of stake networks sometimes choose a similar approach: different validators are assigned to produce new blocks proportional to their staked amount. This is highly dependent on the implementation, though. For example:
+Proof of stake networks sometimes choose a similar approach: different validators are assigned to produce new blocks proportional to their [[Staked Token]] amount. This is highly dependent on the implementation, though. For example:
 - [[Polkadot]] selects a set of 1000 validators, and within an epoch, they all get to produce blocks.
 - Ethereum strives to retain the original Bitcoin property, where any node having a minimum amount of ETH staked can author blocks, but the duration between two blocks that they author might be very long, due to the very large validator set size.
 ## Combining Resources
 A common practice in proof-of-work networks to allow a *large number of entities*, with small hashing power each, to come together and form one strong miner, a process facilitated by [[Mining Pools]].
 
-In proof-of-stake, a similar mechanism exists, and it is often called delegation (see [[Delegators or Nominators]]) where individuals who themselves don't run any hardware can contribute their capital to be [[Staked Tokens|staked]] behind a [[Validator]].
+In proof-of-stake, a similar mechanism exists, and it is often called delegation (see [[Delegators or Nominators]]) where individuals who themselves don't run any hardware can contribute their capital to be [[Staked Token|staked]] behind a [[Validator]].
 ## Blockspace and Quality Thereof
 First, let's introduce a new keyword: [[Blockspace]]. It is a measure of the amount of verifiable computation/storage ([[STF]]/[[State]]) that a blockchain can perform and share with its users.
 

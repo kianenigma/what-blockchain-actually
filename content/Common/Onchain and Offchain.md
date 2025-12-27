@@ -1,2 +1,6 @@
-- **Onchain:** The execution of the [[STF]] of a blockchain, done by the [[Validator]] set, which leads to the [[State]] of the blockchain being updated. All of this work happens within the [[Consensus Algorithm]]'s umbrella and is guaranteed to be [[Trustless]] and secure.
+- **Onchain:** The execution of the [[STF]] of a blockchain, done by the [[Validator]] set, which leads to the [[State]] of the blockchain being updated. All of this work happens within the [[Consensus Algorithm]]'s umbrella and is guaranteed to be [[Trustless]] and secure. Example:
+	- Validators producing a new block
 - Offchain: Any other work that is done outside of the above. Examples:
+	- Blockchain validators might run auxiliary services on their [[Blockchain Node]] that act as oracles
+	- Blockchain nodes might establish connections to other entities to help them with finding the optimal block to produce, as done in [[Blockchain Networks#Proposer-Builder Separation (PBS)]]. 
+	- Every time you read any data from the blockchain, it does not involve a [[Transaction]], and it does no involve any onchain work, as reading data does not require the execution of the [[STF]]. 

@@ -1,3 +1,7 @@
+---
+Description: Brief description of JAM and parts of it that matter in the context of this book.
+---
+
 ![[jam-pen-polkadot.png]]
 JAM is a technical upgrade to Polkadot that started in early 2024 and, at the time of this writing, is being finalized with a [formal specification](https://graypaper.com/). Once enough teams have implemented it, it is intended that the Polkadot L1 will upgrade itself to the JAM protocol, while the L2s and the rest of the ecosystem remain intact.
 
@@ -13,7 +17,7 @@ The first motivation of JAM is to recognize that the in-core/on-chain execution 
 
 > In fact, no such thing as an L2 exists in JAM, and it is instead called a *service*. We use the word L2 here for simplicity.
 ## [[Data Availability]] Accessible to Users
-As it stands now, the [[Data Availability]] in Polkadot (and likely in Ethereum) is only used to store L2 block information. This is a bit ironic, as we know from [[Content/What/The Bigger Picture#Storage]] that the lack of storage primitives other than the blockchain [[State]] is one of the bottlenecks of building more [[Web3]] applications (other than more [[DeFi]] blockchains).
+As it stands now, the [[Data Availability]] in Polkadot (and likely in Ethereum) is only used to store L2 block information. This is a bit ironic, as we know from [[The Bigger Picture#Storage]] that the lack of storage primitives other than the blockchain [[State]] is one of the bottlenecks of building more [[Web3]] applications (other than more [[DeFi]] blockchains).
 
 Similar to the on-chain/in-core execution environment, JAM is recognizing that [[Data Availability]] is another powerful primitive that should not only be used towards serving L2s, but should be accessible to developers as a primitive to store any information that they want in it. We already noted that the analog of an L2 in JAM is called a service. In JAM, services have free access to the Data Availability layer, to write whatever they want to it, and read whatever they want from it.
 

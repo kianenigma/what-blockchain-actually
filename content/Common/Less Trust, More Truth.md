@@ -1,6 +1,6 @@
 This phrase is one of the known mottos of the [[Web3]] space, often used by Web3 Foundation. It is important to add more context to this statement: Trust is not inherently bad.
 
-[[Trust#Human-based Trust]] might be deemed bad, but trusting a verifiable system through irrefutable rules of science, or battle-tested game theoretic reasons is not necessarily bad.
+[[Trust#Human-based Trust]] might be deemed bad, but trusting a verifiable system through irrefutable rules of science and battle-tested game theoretic reasons is not necessarily bad.
 
 I believe the authors of this statement meant "Trust" as [[Trust#Human-based Trust]], and "Truth" as [[Trust#Science-based Trust]]. I would rephrase it as:
 

@@ -1,5 +1,9 @@
+---
+Description: The 3 main properties of trustless blockchain authorities, correct execution of their rules, retaining a correct order, and preserving the entire history.
+---
+
 [[What Is This All About?]] and [[Blockchain-based Authorities]] were in very abstract terms; we called blockchains a digital [[Authority]] without much detail into how they actually work. In the next chapters, we take steps towards making this more concrete. Specifically:
-- [[Execution, Ordering, History and State Machines|This]] chapter will provide multiple more concrete mental models about blockchains.
+- [[Execution, Ordering and History|This]] chapter will provide multiple more concrete mental models about blockchains.
 - [[Blocks, Transactions, And Blockchain Systems]] will then translate these mental models into exact blockchain terminology.
 - And [[Blockchain Networks]] shows how blockchains operate at a network level.
 ## Verifiable Execution of Rules
@@ -55,7 +59,7 @@ Suppose we are given the current state of the system, after $n$ mutations, $y_{n
 One great additional property of [[Trust#Science-based Trust|science-based trust]] is that, because it is based on rules of math and science, it is **easily auditable**. As in, given the public and permissionless rules of the system, one can easily re-execute $F(x_0, y_0)$ all the way up to $F(x_n, y_n)$, and come to the conclusion that $y_{n+1}$ was indeed correct for themselves.
 
 So, the third property of a blockchain-based system is that **the entire history is auditable**.
-### Genesis and Syncing
+### [[Genesis]] and Syncing
 This is why in blockchain systems the notion of **genesis data** and **syncing** is very prominent. We often hear the phrase "you can sync the blockchain". This means, given the initial state of the system, which is called the "genesis state" ($y_0$), and the known rule of the blockchain, $F$, and the history of all of the inputs ($[x_0, x_1, ..., x_n]$), you can always re-execute (*audit*) the entire history by executing $F(x_0, y_0)$ all the way up to $F(x_n, y_n)$.
 
 In other words, knowing:

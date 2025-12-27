@@ -1,3 +1,7 @@
+---
+Description: A high level description of what the whole blockchain industry is about.
+---
+
 ## Owning Digital Money
 
 To understand what blockchains are about, let's dive right into the age-old example of owning digital money:
@@ -77,7 +81,7 @@ This is really what blockchain-based technology is all about: commoditizing the 
 
 Human-based trust is corruptible and limited. Science-based trust, such as that of Bitcoin, is verifiable and accessible.
 
-> There is a third property: that [[Trust#Science-based Trust|science-based trust]] is often **auditable**, at least in the way implemented in blockchains. More in [[Execution, Ordering, History and State Machines]].
+> There is a third property: that [[Trust#Science-based Trust|science-based trust]] is often **auditable**, at least in the way implemented in blockchains. More in [[Execution, Ordering and History]].
 
 ```mermaid
 flowchart
@@ -111,5 +115,6 @@ Don't be mistaken: **most of these ICO tokens ended up being absolutely worthles
 Now, you might ask, can I use blockchains to establish trust in any scenario that requires trust? **The simple answer is: not without some compromises**. Blockchains are at the end of the day digital systems and can work with digital bits, just as a normal computer program does. In the next chapter, [[Blockchain-based Authorities]], we model an [[Authority]] further to look into why.
 
 [^1]: It is not an overstatement to say public-key cryptography is the backbone of the entire internet. Every time you open a website which uses HTTPS, this technology is used at least multiple times.
-[^3]: As said by [Yuval Noah Harari in his famous TED talk](https://www.youtube.com/watch?v=nzj7Wg4DAbs), humanity's ability to establish such human-oriented institutions and giving them power is arguably the main reason for our advent, yet as we have seen in many anecdotes, it is also our Achilles' heel: we are not enlightened Elves, nor sturdy dwarfs, but rather greedy, corruptible humans. When given power, we sometimes but rush to abuse it.
+[^3]: As said by [Yuval Noah Harari in his famous TED talk](https://www.youtube.com/watch?v=nzj7Wg4DAbs), humanity's ability to establish such human-oriented institutions and giving them power is arguably the main reason for our advent, yet as we have seen in many anecdotes, it is also our Achilles' heel: we are not enlightened Elves, nor sturdy
+dwarfs, but rather greedy, corruptible humans. When given power, we sometimes rush to abuse it.
 [^4]: You can similarly see traces of this in the founding fathers of America, trying to limit the amount of power given to the federal government.

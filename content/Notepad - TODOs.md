@@ -1,5 +1,5 @@
 ---
-draft: "true"
+draft: true
 ---
 
 TODOs:
@@ -10,8 +10,13 @@ TODOs:
 - [ ] Make I / we concise 
 - [ ] Single page PDF export
 - [x] Fix order in file-tree and `Content` folder
-- [ ] Make edit to this page link
+- [x] Make edit to this page link
+- [x] Ask question link
 - [ ] Published version
+- [ ] Favicon
+- [x] Description for pages
+- [ ] OG image
+- [x] Review all common
 - [x] First reference to each `Common` term.
 
 

@@ -1,3 +1,7 @@
+---
+Description: Optimistic rollups and how they work.
+---
+
 With the information in [[Scaling Out - Shared Economic Security#Sharding Requirements]] in mind, it is quite easy to understand this scaling method. In Ethereum, this method is called an Optimistic [[Rollup]].
 
 It works in a very similar way as in [[Scaling Out - Shared Economic Security]], where all of the L2 blocks are sent back to the L1 in the [[Data Availability]]. But no re-execution happens by default in the L1, with an **optimistic** assumption that the work must be correct, unless stated otherwise. Instead, entities called **Fishermen** or **Fraud Provers** are assumed to always monitor the system and report any wrong computation in the L2 blocks.

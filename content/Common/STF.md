@@ -1,3 +1,1 @@
-Short for [[State Transition Function]]:
-
-![[State Transition Function]]
+Short for [[State Transition Function]].

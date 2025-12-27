@@ -1,3 +1,7 @@
+---
+Description: Splitting a blockchain into multiple blockchains sophisticatedly with preserving the overall economic security.
+---
+
 Then, [[Polkadot]] drew upon the limitations of [[Scaling Out - Pure Multi-chain]] and proposed a new solution:
 
 > To not **shard** the validator set among different blockchains, but **share** the validator set among different blockchains, while sharding the execution of blocks as much as possible.

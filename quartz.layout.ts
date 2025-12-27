@@ -59,6 +59,7 @@ export const defaultContentPageLayout: PageLayout = {
       component: Component.Backlinks(),
       condition: (page) => page.fileData.slug !== "index",
     }),
+    Component.GithubControls(),
   ],
 }
 
