@@ -39,6 +39,11 @@ Publication Checklist:
 - [ ] As a quartz +digital garden showcase! 
 - [ ] ability to tip me!
 - [ ] Initial readers: 
-	- [ ] Shahab, Seun, Shawn, Jonas, Thibaut, Moeen
+	- [ ] Shahab, 
+	- [ ] Seun, 
+	- [ ] Shawn, 
+	- [x] Jonas, 
+	- [ ] Thibaut, 
+	- [x] Moeen
 - [ ] [Scribe Media | The Leader in Professional Publishing](https://scribemedia.com/)
 - [ ] https://youtu.be/DktkFTTFLHE?si=WkZcCz8KpaKW-_Ut

@@ -27,7 +27,7 @@ This expensiveness can be expressed in at least two ways:
 - **Speed**. The computation and its corresponding storage updates are slower to perform. To do any computation on a blockchain, even assuming we have infinite money to cover the cost, we are limited by a few more factors:
 	- How often the blockchain produces new [[Block]]s (the [[Block Time]]).
 	- What is the maximum computation/storage that can be fit in a single block. Almost all blockchains impose maximum resource consumption limits per-block. In the language of smart-contract chains, a maximum [[Gas]] that can be consumed by the entire block.
-### [[Blockchain and Contention|Contentious]]
+## [[Blockchain and Contention|Contentious]]
 The above will hopefully fully convey the point that a blockchain system is not well fitted for arbitrary computation and storage, but rather for those that bear enough importance or value that would justify the expensiveness (such as, of course, financial applications, ergo [[DeFi]]). This importance can be among the following, but not limited solely to these as new use-cases beyond my imagination might come up:
 - **Social** interactions that two parties that don't trust one another want to transact.
 - **Value-bearing** interactions such as DeFi.
