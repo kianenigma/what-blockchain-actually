@@ -17,6 +17,7 @@ TODOs:
 - [ ] Favicon
 - [x] Description for pages
 - [ ] OG image
+- [ ] Permalinks? 
 - [x] Remove raw excalidraw files from sitemap and everything.
 - [x] Review all common
 - [x] First reference to each `Common` term.
@@ -38,6 +39,6 @@ Publication Checklist:
 - [ ] As a quartz +digital garden showcase! 
 - [ ] ability to tip me!
 - [ ] Initial readers: 
-	- [ ] Shahab, Seun, Shawn, Jonas, Thibaut
+	- [ ] Shahab, Seun, Shawn, Jonas, Thibaut, Moeen
 - [ ] [Scribe Media | The Leader in Professional Publishing](https://scribemedia.com/)
 - [ ] https://youtu.be/DktkFTTFLHE?si=WkZcCz8KpaKW-_Ut

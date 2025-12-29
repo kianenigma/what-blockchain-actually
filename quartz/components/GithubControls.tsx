@@ -60,13 +60,18 @@ export default ((opts?: Partial<GithubControlsOptions>) => {
     }
 
     // Construct the full GitHub edit URL
-    const editUrl = githubPath
-      ? `${options.repoUrl}/edit/${options.branch}/${githubPath}`
+    // Ensure the path ends with .md extension
+    let finalPath = githubPath
+    if (finalPath && !finalPath.endsWith(".md")) {
+      finalPath = `${finalPath}.md`
+    }
+    const editUrl = finalPath
+      ? `${options.repoUrl}/edit/${options.branch}/${finalPath}`
       : null
 
     // Get the chapter/page title for prefilling the discussion
     const chapterTitle = fileData.frontmatter?.title
-    let discussionsUrl = options.discussionsUrl
+    let discussionsUrl: string = options.discussionsUrl ?? defaultOptions.discussionsUrl!
     if (chapterTitle) {
       // Format: "<Chapter Name>: Your Question"
       const prefilledTitle = `${chapterTitle}: Your Question`

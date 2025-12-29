@@ -1,4 +1,4 @@
-For many years, I have struggled with the simple question of "what is Blockchain, actually? What is it useful for?". I had some "memorized" answers, but I can confess that I never set aside the time to deeply understand it.
+For many years, I have struggled with the simple question of "What is Blockchain, actually? What is it useful for?". I had some "memorized" answers, but I can confess that I never set aside the time to deeply understand it.
 
 > If you understand it, you don’t need to memorize it. If you don’t understand it, you don’t want to memorize it.
 > [source](https://x.com/naval/status/1797129073828982970)
@@ -13,13 +13,20 @@ I admired Naval's idea about how to *think clearly*, and in this writing, I aspi
 > Richard Feynman very famously does this in “Six Easy Pieces,” one of his early physics lectures. He basically explains mathematics in three pages. He starts from the number line— counting—and then he goes all the way up to precalculus. He just builds it up through an unbroken chain of logic. He doesn’t rely on any definitions.
 
 Throughout this work, I try to establish a shared vocabulary, always backlink to it, and adhere to an *unbroken chain of logic* methodology.
-## Content Organization
+## Organization 
+To achieve the above, I am using a hybrid writing model in which this is both a book and a wiki. Articles have an order just like book chapters, but they extensively backlink to one another. Moreover, new concepts are always introduced in a specific chapter with the specific context of that chapter in mind. Then, each new concept gets a dedicated page in the Common directory. The dedicated note for this new concept is a more generic definition, and is backlinked in all subsequent references to it. 
+
+So, you have two options: 
+- You can read this as as if it were a physical book from start to finish, without clicking on any of the links, unless if explicitly asked to do so. 
+- Later on, you can browse this as a wiki, jumping from page to page and get a holistic understanding. 
+## How to Read 
 - The main content of this book is the order of chapters that are shown in the [[index|Homepage]].
 - Each chapter finishes with links to the previous and next chapter, based on the order in [[index|Homepage]].
 	- Further sub-folders exist, and can be seen in the breadcrumbs and [Content](./Content) page.
 - [Common](/Common) is both a glossary, and common definitions that are re-used in different chapters.
 	- Each entry in this folder contains a "Introduced In" section, which points out to the first chapter that introduced this concept, followed by a full list and graph of backlinks.
 - A file-tree is available, allowing direct navigation to any other part.
+- I highly suggest enabling the reading mode on the left side of the screen to reduce clutter while reading. 
 ## Audience
 I hope this work has something to offer for various groups of people, but I cannot ultimately name one group as my target audience. Based on my guesses:
 - **If you are a programmer, just getting started with blockchains**: This book has a lot of foundational knowledge to offer, but won't teach you any coding
@@ -27,7 +34,7 @@ I hope this work has something to offer for various groups of people, but I cann
 - **If you are a non-programmer, but have hovered around tech (e.g. project/product managers, aspiring founders or decision makers) and are interested, or actively working on blockchains**: I believe this book's level of detail is perfect for you.
 - **If you are a seasoned and technical blockchain person**: A big part of this book might be a rephrasing of what you already know. I hope though reading this, you can find better mental models and organization for what you already know.
 ## Ultimate Goal
-As it stands, blockchain technology is mainly finding product-market fit and adoption in the financial realm. My ultimate goal in writing this is to contribute to a future scenario, in which I can look back at my long career in Web3 and say that this technology changed **many things** for the better for humans, beyond changing the wheels of our financial system.
+As it stands, blockchain technology is mainly finding product-market fit and adoption in the financial realm. My ultimate goal in writing this is to contribute to a future scenario, in which I can look back at my long career in Web3 and say that this technology improved **many things** for humans, beyond changing the wheels of our financial system.
 
 To do that, I am inspired by the following:
 
@@ -45,7 +52,7 @@ While I spent about 7 years working on Polkadot at the time of writing, I do not
 
 Yet, I cannot deny that my understanding of blockchains has a Polkadot-oriented bias: I learned all of this *through the lens of Polkadot*, so some degree of bias is unavoidable.
 
-That being said, I believe that Polkadot has been a great project for me to learn blockchains from. This is because based on my comparisons to the rest of the ecosystem, Polkadot is an interesting mix of:
+That being said, I believe that Polkadot has been a great project for me to learn blockchains from. This is because based on my comparisons to the rest of the ecosystems, Polkadot is an interesting mix of:
 - Trying out radically new technical and social experiments
 - Most importantly, it remains vigorously "aligned" with the original, Bitcoin and Ethereum style cyberpunk Web3 **values**.
 

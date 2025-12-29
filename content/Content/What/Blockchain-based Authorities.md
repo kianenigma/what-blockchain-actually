@@ -31,18 +31,18 @@ flowchart
 
 Conversely, the **land registry** is a **real-world form of authority**. Such an authority needs to be able to know if a land exists, who owns it, and crucially, enforce the ownership of it through some law enforcement means, if need be.
 ### Oracle Problem
-The often overlooked reality is: blockchains are *obviously* digital systems. **For a digital system, inspection of and updating the real world is (nearly) impossible to do *independently***. This difficulty, specifically when it comes to reading information from the real world, is referred to as the [[Oracle Problem]].
+The often overlooked reality is: blockchains are obviously digital systems. **For a digital system, inspection of and updating the real world is (nearly) impossible to do *independently***. This difficulty, specifically when it comes to reading information from the real world, is referred to as the [[Oracle Problem]].
 
 ```mermaid
 flowchart
 	DS[Digital System] --"write ❌"--> RW[Real World] --"read ❌"--> DS
 ```
 
-As an example, a digital system, such as a blockchain, has no practical way to *independently* understand if a piece of land exists, and to whom it belongs. Moreover, a digital system cannot meaningfully enforce that "*Alice should from now on own this land that formerly belonged to Bob*". Sure, the system can create a digital piece of data that says so, but so long as it is not enforced in the real world, it is meaningless.
+As an example, a digital authority like Bitcoin has no practical way to *independently* understand if a piece of land exists, and to whom it belongs. Moreover, Bitcoin cannot meaningfully enforce that "*Alice should from now on own this land that formerly belonged to Bob*". Sure, it can create a digital piece of data that says so, but so long as it is not enforced in the real world, it is meaningless.
 
-This is why real-world authorities are backed by some form of ***law enforcement unit***, such as the police and military, as noted in [[What Is This All About?]]. No blockchain-based system yet has a real-world law enforcement body behind it[^1].
+Contrary, Bitcoin has full independent authority, with both read and write permission, over its own _digital token_ BTC. To transfer BTC tokens from Alice to Bob, Bitcoin is operating over its sphere of authority. 
 
-In contrast, blockchains can effortlessly be [[Trustless]] on use-cases whose state is purely digital. **This property demonstrates why Decentralized Finance ([[DeFi]] for short) is such a successful use-case for blockchains**. Assuming a free and open internet[^2], DeFi has no dependency on any real-world information.
+This is why real-world authorities are backed by some form of ***law enforcement unit***, such as the police and military, as noted in [[What Is This All About?]]. No blockchain-based system yet has a real-world law enforcement body behind it[^1]
 ### The Weakest Link
 This is NOT to say that no blockchain-based system should attempt to tackle any real-world use-case. But we should acknowledge that there is a high chance of creating a system with a single point of failure here.
 
@@ -57,15 +57,9 @@ In the case of tokenization of real-world assets on a blockchain platform like E
 ## Summary
 Any [[Authority]]'s role is to establish [[Trust]]. Blockchains are systems that yield [[Trust#Science-based Trust|science-based trust]], which is paradoxically called [[Trustless]], because it is free of [[Trust#Human-based Trust|human-based trust]]. An authority typically needs to hold some (contentious) **state** and perform **mutations** on top of it based on a clear set of **rules**. This state is either in the **real world** or the **digital world**.
 
-Digital state is a great fit for blockchains, since it can be easily mutated by the same system. Real-world matters are more difficult, due to the [[Oracle Problem]], but it can be done. At the end of the day, the [[Trustless]]ness of Ethereum managing the transfer of the ETH token (a purely digital contentious state that it can fully read and write) is fundamentally different from an Ethereum [[Smart Contract]] managing tokenized real-world assets.
+Digital state is a great fit for blockchains, since it can be easily read and mutated by the same system. Real-world matters are more difficult, due to the [[Oracle Problem]], but it can be done. At the end of the day, the [[Trustless]]ness of Ethereum managing the transfer of the ETH token (a purely digital contentious state that it can fully read and write) is fundamentally different from an Ethereum [[Smart Contract]] managing tokenized real-world assets.
 
 While we can strive to solve the [[Oracle Problem]] in a [[Trustless]] manner, turning a blind eye to it is defying the whole purpose of why the [[Web3]] industry exists, and why it managed to attract so many early adopters.
 
-In the next chapter, [[Execution, Ordering and History]], we build on top of the three properties of blockchains that we know about:
-- State
-- Mutations + rules of mutations
-and present more concrete mental models for blockchains.
-
 [^1]: [The Network State](https://thenetworkstate.com/) book proposes steps through which digital authorities can evolve into gaining legitimacy in the real world, which is very much related to the enforcement issues mentioned above.
-[^2]: How accurate is this assumption of the internet being "free and open"? See [[The Free Internet|here]].
 [^4]: With some simplification, Bitcoin actually doesn't use an account model but rather a [UTXO](https://en.wikipedia.org/wiki/Unspent_transaction_output) system.

@@ -36,7 +36,7 @@ ST --> Verifiable
 
 In the Bitcoin network, such branches of hard-science are most notably cryptography, economics, and distributed systems. The main discovery of Bitcoin was that if one combines these branches of science together, they can build a system that is *equally trustworthy* of behaving according to certain rules, yet it requires no [[Trust]]worthy human to sit in the center.
 
-And the Bitcoin network is exactly one example of that: a simple bank, giving the ability to anyone to open an account in it, with basic rules that allow storage and transfer of value, all without a human-based [[Authority]] sitting in the middle.
+And the Bitcoin network is exactly one example of that: a simple bank, giving the ability to anyone to open an account in it, with basic rules that allow store and transfer of value, all without a human-based d[[Authority]] sitting in the middle.
 
 > **Bitcoin's main novelty is demonstrating that creating an [[Authority]] with [[Trust#Science-based Trust|science-based trust]] is possible, and people are willing to store their wealth with this [[Authority]].**
 
@@ -106,7 +106,7 @@ We summarize these properties that blockchain systems bring about as [[Trustless
 
 Bitcoin was the first demonstration that you can do this. It was the first digital bank, establishing [[Trust]] without a human-based [[Authority]]. This was the first step towards the commoditization of digital money.
 
-Ethereum took the same idea to the next step and allowed more general forms of computation to be executed under the same [[Trustless]] manner. We explore this flexibility further in [[Evolution of Blockchain State Machines]].
+Ethereum took the same idea to the next step and allowed more general forms of computation to be executed in the same [[Trustless]] manner. We explore this flexibility further in [[Evolution of Blockchain State Machines]].
 
 One of the first demonstrated examples of more general forms of computation was a standard like [ERC-20](https://ethereum.org/developers/docs/standards/tokens/erc-20/) on Ethereum, allowing anyone to create a token that is tradeable against ETH via decentralized exchanges. This was extensively used for fundraising in the form of [ICOs](https://en.wikipedia.org/wiki/Initial_coin_offering).
 
