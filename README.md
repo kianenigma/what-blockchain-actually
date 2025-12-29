@@ -1,18 +1,20 @@
-# Quartz v4
+# What Is A Blockchain, Actually?
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+For many years, I have struggled with the simple question of "What is Blockchain, actually? What is it useful for?". I had some "memorized" answers, but I can confess that I never set aside the time to deeply understand it.
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
-Quartz v4 features a from-the-ground rewrite focusing on end-user extensibility and ease-of-use.
+> If you understand it, you don’t need to memorize it. If you don’t understand it, you don’t want to memorize it.
+> [source](https://x.com/naval/status/1797129073828982970)
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+This writing is the outcome of my journey to answer this question without needing to memorize anything. While reading, I ask you to forget everything you know about blockchains alongside me, and follow me step by step. I promise it will make sense at the end, and you will finish with a brand-new understanding of this technology.
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+📚 Continue reading in [here](https://blog.kianenigma.com/what-blockchain-actually).
 
-## Sponsors
+## Build Process
 
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+This site is built with [Quartz](https://quartz.jzhao.xyz/), a static site generator that transforms Markdown content into fully functional websites.
+
+```
+npm i
+npx quartz build --serve
+npx quartz sync
+```
