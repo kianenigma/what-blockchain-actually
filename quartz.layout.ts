@@ -12,6 +12,7 @@ export const sharedPageComponents: SharedLayout = {
   footer: Component.BookFooter({
     links: {
       GitHub: "https://github.com/kianenigma/what-blockchain-actually",
+      License: "https://github.com/kianenigma/what-blockchain-actually/blob/v4/LICENSE.txt",
     },
   }),
 }
