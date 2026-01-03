@@ -18,7 +18,7 @@ I admired Naval's idea about how to *think clearly*, and in this writing, I aspi
 
 Throughout this work, I try to establish a shared vocabulary, always backlink to it, and adhere to an *unbroken chain of logic* methodology.
 ## Organization 
-To achieve the above, I am using a hybrid writing model in which this is both a book and a wiki. Articles have an order just like book chapters, but they extensively backlink to one another. Moreover, new concepts are always introduced in a specific chapter with the specific context of that chapter in mind. Then, each new concept gets a dedicated page in the Common directory. The dedicated note for this new concept is a more generic definition, and is backlinked in all subsequent references to it. 
+To achieve the above, I am using a hybrid writing model in which this is both a book and a wiki. Articles have an order just like book chapters, but they extensively backlink to one another. Moreover, new concepts are always introduced in a specific chapter with the specific context of that chapter in mind. Then, each new concept gets a dedicated page in the [Common](./Common) directory. The dedicated note for this new concept is a more generic definition, and is backlinked in all subsequent references to it. 
 
 So, you have two options: 
 - You can read this as as if it were a physical book from start to finish, without clicking on any of the links, unless if explicitly asked to do so. 
@@ -30,7 +30,7 @@ So, you have two options:
 - [Common](/Common) is both a glossary, and common definitions that are re-used in different chapters.
 	- Each entry in this folder contains a "Introduced In" section, which points out to the first chapter that introduced this concept, followed by a full list and graph of backlinks.
 - A file-tree is available, allowing direct navigation to any other part.
-- I highly suggest enabling the reading mode on the left side of the screen to reduce clutter while reading. 
+- I highly suggest enabling the reading mode (the book icon next to theme switcher) to reduce clutter while reading.
 ## Audience
 I hope this work has something to offer for various groups of people, but I cannot ultimately name one group as my target audience. Based on my guesses:
 - **If you are a programmer, just getting started with blockchains**: This book has a lot of foundational knowledge to offer, but won't teach you any coding
@@ -50,7 +50,7 @@ So, my ultimate goal is to take steps towards the two main steps of this framewo
 
 I hope I can learn the gaps in the blockchain technology and enable its further adoption by writing this, and my readers can do the same.
 ## Accuracy
-A small disclaimer that this book is a passion project, and while I have done my best to be unbiased and accurate in it, I cannot deny that most of it has been written in my pastime and based on the knowledge that I have gained throughout the past 7 years, and not extensive research at the time of writing[^2]. For sure, my knowledge on some topics might be partial, or my list of examples might not be comprehensive. I appreciate any contribution and corrections from the readers.
+A small disclaimer that this book is a passion project, and while I have done my best to be unbiased and accurate in it, I cannot deny that most of it has been written in my pastime and based on the knowledge that I have gained throughout the past 7 years in an ongoing manner by skimming twitter and reading blog posts, and not extensive research at the time of writing[^2]. For sure, my knowledge on some topics might be partial/incorrect, or my list of examples might not be comprehensive. I appreciate any contribution and corrections from the readers.
 ## Polkadot?
 While I spent about 7 years working on Polkadot at the time of writing, I do not intend this writing to be particularly centered around Polkadot. The early chapters will purely be about general blockchains, and later chapters about scaling will cover Polkadot as one of the approaches.
 
@@ -65,6 +65,11 @@ That being said, I believe that Polkadot has been a great project for me to lear
 This book is written using [Obsidian](https://obsidian.md/), and published using [Quartz](https://quartz.jzhao.xyz/). I have found immense joy in using these two amazing tools, and I intend to keep writing more content with them.
 
 All of the content here is written directly by me[^3], and no LLMs have been used. I have used LLMs for parts of the Quartz customization.
+
+## Contributions 
+This version of this book is available online, and will always remain free. To contribute, consider: 
+- Opening pull requests with corrections.
+- Tipping via any of my public blockchain addresses [here](https://blog.kianenigma.com/about/).
 
 [^1]: also see https://blog.kianenigma.com/post/personal/clarity/
 [^2]: most of this has been written in late 2025.
