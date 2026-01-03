@@ -1,5 +1,5 @@
 ---
-title: What Is Blockchain, Actually?
+title: What is a Blockchain, Actually?
 description: What does a blockchain actually do?
 book-index: true
 ---
