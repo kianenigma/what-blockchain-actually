@@ -1,3 +1,7 @@
+---
+permalink: introduction
+---
+
 For many years, I have struggled with the simple question of "What is Blockchain, actually? What is it useful for?". I had some "memorized" answers, but I can confess that I never set aside the time to deeply understand it.
 
 > If you understand it, you don’t need to memorize it. If you don’t understand it, you don’t want to memorize it.

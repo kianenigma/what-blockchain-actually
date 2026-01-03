@@ -1,5 +1,6 @@
 ---
 description: Summary of part 1 in 1 page.
+permalink: /summaries/page
 ---
 
 ## Blockchains

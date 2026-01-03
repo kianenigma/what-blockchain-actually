@@ -1,5 +1,6 @@
 ---
 description: Brief description of JAM and parts of it that matter in the context of this book.
+permalink: polkadot/jam
 ---
 
 ![[jam-pen-polkadot.png]]

@@ -1,5 +1,6 @@
 ---
 description: Splitting a single blockchain into multiple blockchains naively.
+permalink: scaling/pure
 ---
 
 Then, drawing upon the [[Introduction - Why Scaling Matters#Sequential Blockchains]] analogy of seeing the entire validator set as a single-threaded CPU, we can build our first [[Sharding|sharded]] blockchain design:

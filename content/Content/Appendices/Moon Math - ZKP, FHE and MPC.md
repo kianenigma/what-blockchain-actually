@@ -1,5 +1,6 @@
 ---
 description: 3 of the most prominent branches of new cryptography used in blockchains.
+permalink: appendix/moon-math
 ---
 
 

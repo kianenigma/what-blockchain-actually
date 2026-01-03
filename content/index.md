@@ -35,6 +35,6 @@ book-index: true
 	- Topics that were mentioned in the above chapters, deserve a long description, but don't fit anywhere above.
 	- [[Proof of Work and Proof of Stake]]
 	- [[Bridges And Cross Chain Messaging]]
-	- [[TEE]]
 	- [[Moon Math - ZKP, FHE and MPC]]
-	- [[Opinionated List Of Products And Why]]
+	- 🏗️ [[TEE]] (work in progress)
+	- 🏗️ Opinionated List Of Products And Why (work in progress)

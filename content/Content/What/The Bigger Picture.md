@@ -1,5 +1,6 @@
 ---
 description: Zoom out and see the big-picture mission of blockchains.
+permalink: what/big-picture
 ---
 
 To start this chapter, I will begin with a personal interpretation of the [[Web3]] space's history so far.

@@ -1,5 +1,6 @@
 ---
 description: Optimistic rollups and how they work.
+permalink: scaling/optimistic
 ---
 
 With the information in [[Scaling Out - Shared Economic Security#Sharding Requirements]] in mind, it is quite easy to understand this scaling method. In Ethereum, this method is called an Optimistic [[Rollup]].

@@ -1,5 +1,6 @@
 ---
 description: A high level description of what the whole blockchain industry is about.
+permalink: what/what-is-this-all-about
 ---
 
 ## Owning Digital Money

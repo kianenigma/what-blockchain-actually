@@ -1,5 +1,6 @@
 ---
 description: The 3 main properties of trustless blockchain authorities, correct execution of their rules, retaining a correct order, and preserving the entire history.
+permalink: what/execution-ordering-history
 ---
 
 [[What Is This All About?]] and [[Blockchain-based Authorities]] were in very abstract terms; we called blockchains a digital [[Authority]] without much detail into how they actually work. In the next chapters, we take steps towards making this more concrete. Specifically:

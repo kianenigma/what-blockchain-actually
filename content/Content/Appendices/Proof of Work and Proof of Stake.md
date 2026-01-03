@@ -1,5 +1,6 @@
 ---
 description: More details about how proof of work and stake work and achieve economic security.
+permalink: appendix/pow-pos
 ---
 
 ## Introduction

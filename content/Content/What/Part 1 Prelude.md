@@ -1,6 +1,7 @@
 ---
 description: Prelude before we dive into part 1.
 tags:
+permalink: what/prelude
 ---
 The goal of this part of the book is to clearly understand *what*[^1] blockchains do, and *why* it is novel, and under _which circumstances_ it can be _useful_. While doing so, we will discover a bit _how_ they do it, but I will leave most of this to the readers to learn on their own. The _how_ part would inevitably be long, very technical, and frankly not a contributor to the [[Introduction#Ultimate Goal|ultimate goal]] of this book named before.
 

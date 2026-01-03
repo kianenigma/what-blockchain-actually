@@ -2,7 +2,10 @@ import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 import { simplifySlug } from "./quartz/util/path"
 import { createExplorerSortFn } from "./quartz/util/configSort"
+import { getLatestRelease } from "./quartz/util/githubRelease"
 
+// Fetch latest release at build time
+const latestRelease = await getLatestRelease()
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
@@ -14,6 +17,7 @@ export const sharedPageComponents: SharedLayout = {
       GitHub: "https://github.com/kianenigma/what-blockchain-actually",
       License: "https://github.com/kianenigma/what-blockchain-actually/blob/v4/LICENSE.txt",
     },
+    latestRelease: latestRelease,
   }),
 }
 

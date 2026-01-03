@@ -9,15 +9,18 @@ TODOs:
 - [x] Total time should only be in `Content`
 - [ ] Make I / we concise 
 - [ ] Single page PDF export
-- [ ] new README, Code of Conduct, License, etc
+- [ ] ability to tip me!
+- [ ] analytics
+- [x] new README, Code of Conduct, License, etc
 - [x] Fix order in file-tree and `Content` folder
 - [x] Make edit to this page link
 - [x] Ask question link
-- [ ] Published version
-- [ ] Favicon
+- [x] Published version
+- [ ] Fix URL :cry 
+- [x] Favicon
 - [x] Description for pages
-- [ ] OG image
-- [ ] Permalinks? 
+- [x] OG image
+- [x] Permalinks? 
 - [x] Remove raw excalidraw files from sitemap and everything.
 - [x] Review all common
 - [x] First reference to each `Common` term.
@@ -37,7 +40,6 @@ Publication Checklist:
 - [ ] Blockchain Podcasts, Any other influencer.
 - [ ] Short form video clips narrated
 - [ ] As a quartz +digital garden showcase! 
-- [ ] ability to tip me!
 - [ ] Initial readers: 
 	- [ ] Shahab, 
 	- [ ] Seun, 

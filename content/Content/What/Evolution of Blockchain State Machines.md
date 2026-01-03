@@ -1,5 +1,6 @@
 ---
 description: How the blockchain state machine has evolved over time and has become more developer friendly and extensible.
+permalink: what/evolution-stm
 ---
 
 Our chapters so far have looked like this: we started with a set of conceptual explanations:
