@@ -10,7 +10,7 @@ TODOs:
 - [ ] Make I / we concise 
 - [ ] Single page PDF export
 - [ ] ability to tip me!
-- [ ] analytics
+- [x] analytics
 - [x] new README, Code of Conduct, License, etc
 - [x] Fix order in file-tree and `Content` folder
 - [x] Make edit to this page link

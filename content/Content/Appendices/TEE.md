@@ -1,6 +1,6 @@
 ---
 description: Trusted execution environments, and their overlap with blockchains.
-draft: true
+draft: false
 permalink: appendix/tee
 ---
 
