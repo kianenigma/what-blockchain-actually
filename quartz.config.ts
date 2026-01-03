@@ -9,7 +9,7 @@ import { folderPageSortFn } from "./quartz/util/configSort"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "What Is A Blockchain, Actually?",
+    pageTitle: "What is a Blockchain, Actually?",
     pageTitleSuffix: "",
     // TODO: I think false is better for SEO?
     enableSPA: false,
