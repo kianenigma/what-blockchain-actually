@@ -37,4 +37,4 @@ book-index: true
 	- [[Bridges And Cross Chain Messaging]]
 	- [[Moon Math - ZKP, FHE and MPC]]
 	- 🏗️ [[TEE]] (work in progress)
-	- 🏗️ Opinionated List Of Products And Why (work in progress)
+	- 🏗️ [[Opinionated List Of Pzroducts And Why]] (work in progress)

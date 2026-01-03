@@ -14,10 +14,8 @@ const config: QuartzConfig = {
     // TODO: I think false is better for SEO?
     enableSPA: false,
     enablePopovers: true,
-    analytics: {
-      // TODO:
-      provider: "plausible",
-    },
+    // we use a custom simple analytics script
+    analytics: null,
     locale: "en-US",
     baseUrl: "blog.kianenigma.com/what-blockchain-actually",
     ignorePatterns: ["private", "templates", ".obsidian", "**/*.excalidraw.md",],
