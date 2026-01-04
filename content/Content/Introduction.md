@@ -62,7 +62,7 @@ That being said, I believe that Polkadot has been a great project for me to lear
 
 > More specifically, if I were to name the single most important resource that inspired me while writing this, it would be [this TED talk from Polkadot founder Gavin Wood](https://www.ted.com/talks/gavin_wood_commoditizing_trust_and_disrupting_the_system).
 ## Publishing and AI
-This book is written using [Obsidian](https://obsidian.md/), and published using [Quartz](https://quartz.jzhao.xyz/). I have found immense joy in using these two amazing tools, and I intend to keep writing more content with them.
+This book is written using [Obsidian](https://obsidian.md/), and published using [Quartz](https://quartz.jzhao.xyz/)[^4]. I have found immense joy in using these two amazing tools, and I intend to keep writing more content with them.
 
 All of the content here is written directly by me[^3], and no LLMs have been used. I have used LLMs for parts of the Quartz customization.
 
@@ -74,3 +74,4 @@ This version of this book is available online, and will always remain free. To c
 [^1]: also see https://blog.kianenigma.com/post/personal/clarity/
 [^2]: most of this has been written in late 2025.
 [^3]: which might explain my grammar and dictation errors as a non-native speaker.
+[^4]: Checkout [Obsidian Garden Gallery](https://vaults.obsidian-community.com/) for more amazing websites created using Obsidian.
