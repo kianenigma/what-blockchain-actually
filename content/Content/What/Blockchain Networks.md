@@ -100,7 +100,7 @@ A blockchain may have a closed set of nodes that perform the [[Consensus Algorit
 - Notice how a single blockchain is a network of nodes that are interconnecting.
 - But we also know that many blockchains exist in the world (Ethereum, Polkadot, NEAR, Bitcoin)[^3].
 - This means that an ecosystem of blockchains is itself a broader network of blockchains.
-- The common keyword for the technology that allows blockchain A to connect and exchange messages with blockchain B is called, unsurprisingly, a [[Bridges And Cross Chain Messaging|bridge]].
+- The common keyword for the technology that allows blockchain A to connect and exchange messages with blockchain B is called, unsurprisingly, a [[Bridges and Cross Chain Messaging|bridge]].
 
 ![[Blockchain Networks 2025-12-18-17.59.23.excalidraw]]
 ### Journey of a User Transaction

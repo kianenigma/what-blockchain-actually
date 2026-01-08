@@ -34,8 +34,10 @@ All that is said to imply: **The first and most important property of blockchain
 - If we see blockchains as computer programs, we can be sure that no matter what, they execute their **code** correctly.
 - If we see blockchains as mathematical formulas, we can be sure that $F(x, y)$ is executed correctly and $y\prime$ is valid.
 
-> [!tip]- What about me running an open source code on my server/machine, and letting you verify it however you want?
-> Yes, that would partially work too, but then we are faced with a number of other challenges. Suppose I am the untrusted party that you want to interact with. Even if I show you the source code ($F$) of what I am about to execute on my machine, how would you know my machine actually did that? Perhaps you want to re-execute the same thing in your computer. If you go down this rabbit hole and do it right, you end up re-inventing all of the core technological pieces of what a blockchain does, explained in this chapter and the next one.
+### Counter Example: Running Open Source Code 
+What about me running an open source code on my server/machine, and letting you verify it however you want?
+
+Yes, that would partially work too, but then we are faced with a number of other challenges. Suppose I am the untrusted party that you want to interact with. Even if I show you the source code ($F$) of what I am about to execute on my machine, how would you know my machine actually did that? Perhaps you want to re-execute the same thing in your computer. If you go down this rabbit hole and do it right, you end up re-inventing all of the core technological pieces of what a blockchain does, explained in this chapter and the next one.
 ## Ordering
 Then, imagine we have two subsequent transfers, $x_1$ and $x_2$:
 - $F(x_1, y) \rightarrow y_1$

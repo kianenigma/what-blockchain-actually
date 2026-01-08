@@ -2,4 +2,4 @@ A subset of a [[Merkel Tree]] that can be send to a party who knows nothing abou
 
 See [[Merkel Tree]] for an example. 
 
-This technology is extensively used in [[Blockchain Networks#Light Node]]s and [[Bridges And Cross Chain Messaging]]. 
+This technology is extensively used in [[Blockchain Networks#Light Node]]s and [[Bridges and Cross Chain Messaging]]. 

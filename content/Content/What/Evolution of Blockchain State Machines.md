@@ -32,7 +32,7 @@ An early way to create more custom [[STF]]s was essentially to create a _whole n
 So, in this mindset, **if you want to have a different STF, you would have to create a (yet another) new (fixed-state-machine) blockchain[^5]**. This approach has a number of downsides:
 - Each of these chains becomes a small island of its own, fragmenting the ecosystem further.
 - Creation of a new blockchain (for various reasons) almost always implies creating a new token, which is itself another form of fragmentation of capital[^7].
-	- A [[Bridges And Cross Chain Messaging|bridge]] is the technology that tries to connect these isolated blockchains, which is discussed later.
+	- A [[Bridges and Cross Chain Messaging|bridge]] is the technology that tries to connect these isolated blockchains, which is discussed later.
 - Building a whole new blockchain is time-consuming, hard, and can go wrong for a number of reasons.
 	- Blockchains often benefit from "[economies of scale](https://en.wikipedia.org/wiki/Economies_of_scale)", in that the larger the system and the more people who use it, the more [[Trustless]] it is. Therefore, a young custom blockchain with a small ecosystem is more vulnerable.
 

@@ -8,6 +8,7 @@ permalink: what/what-is-this-all-about
 To understand what blockchains are about, let's dive right into the age-old example of owning digital money:
 1. When you own $1000 in your bank.
 2. When you own $1000 in the Bitcoin network.
+
 How is it that we trust each of them to exist and be credible?
 ### Bank
 In the former, as little as one computer in the world, owned by the bank, can store the information that you own \$1000. When you want to transact with your \$1000, you need to authorize yourself to this one computer.
