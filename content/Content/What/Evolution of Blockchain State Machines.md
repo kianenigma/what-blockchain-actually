@@ -15,13 +15,13 @@ And then we pivoted for a few chapters to explaining concrete blockchain concept
 
 This chapter is essentially a continuation of [[Execution, Ordering and History]], but it came with a gap, in order to provide readers with more specific knowledge about blockchains first.
 
-In [[Execution, Ordering and History]], we modeled a blockchain as a [[State Machine]] (or a computer) whose execution is [[Trustless]], fully or partially depending on the implementation. In this chapter, we will look at the evolution of these state machines and see what applications have so far been encoded in them.
+In [[Execution, Ordering and History]], we modeled a blockchain as a [[State Machine]] (or a computer) whose execution is [[Trustless]], fully or partially depending on the implementation. In this chapter, we will look at the evolution of these state machines and see what applications have been encoded in them so far.
 
 This evolution can be categorized into two different eras:
 - [[#Fixed State Machine]]
 - [[#Programmable State Machine]].
 ## Fixed State Machine
-A fixed [[State Machine]] blockchain is the simplest one; it has a set of rules that in principle never change. Moreover, this state machine has no way of being extended, specifically by users.
+A fixed [[State Machine]] blockchain is the simplest one; it has a set of rules that never change in principle. Moreover, this state machine has no way of being extended, specifically by users.
 
 The most famous example in this category is Bitcoin. Its state is merely the balance of users[^3], its [[STF]] is a simple digital bank, and it offers no way to execute any further logic as a part of its STF[^2].
 
@@ -32,7 +32,7 @@ An early way to create more custom [[STF]]s was essentially to create a _whole n
 So, in this mindset, **if you want to have a different STF, you would have to create a (yet another) new (fixed-state-machine) blockchain[^5]**. This approach has a number of downsides:
 - Each of these chains becomes a small island of its own, fragmenting the ecosystem further.
 - Creation of a new blockchain (for various reasons) almost always implies creating a new token, which is itself another form of fragmentation of capital[^7].
-	- A [[Bridges and Cross Chain Messaging|bridge]] is the technology that tries to connect these isolated blockchains, which is discussed later.
+	- A [[Bridges And Cross-Chain Messaging|bridge]] is the technology that tries to connect these isolated blockchains, which is discussed later.
 - Building a whole new blockchain is time-consuming, hard, and can go wrong for a number of reasons.
 	- Blockchains often benefit from "[economies of scale](https://en.wikipedia.org/wiki/Economies_of_scale)", in that the larger the system and the more people who use it, the more [[Trustless]] it is. Therefore, a young custom blockchain with a small ecosystem is more vulnerable.
 
@@ -52,18 +52,18 @@ Whereas Ethereum's transactions could be any of:
 
 Achieving this in a [[Trustless]] way (especially keeping it *accessible*) is no easy feat, and similar to Bitcoin, Ethereum is a great demonstration that this is *possible*. The main challenges in achieving this are [[#Metering]] and [[#Determinisms]], discussed further below.
 #### Smart Contract Languages and Virtual Machines
-Smart contracts are written in various languages and are compiled to a byte-code. Then, any blockchain that wants to execute these smart contracts needs to have a way to execute these byte-codes. One technology that enables this is a [Virtual Machine](https://en.wikipedia.org/wiki/Virtual_machine), or VM.
+Smart contracts are written in various languages and are compiled to bytecode. Then, any blockchain that wants to execute these smart contracts needs to have a way to execute this bytecode. One technology that enables this is a [Virtual Machine](https://en.wikipedia.org/wiki/Virtual_machine), or VM.
 
-In Ethereum, the **Ethereum Virtual Machine** (**EVM**) byte-code is used. The default language that could be compiled to EVM was **Solidity**, yet more languages can now be compiled to EVM byte-code.
+In Ethereum, the **Ethereum Virtual Machine** (**EVM**) bytecode is used. The default language that could be compiled to EVM was **Solidity**, yet more languages can now be compiled to EVM bytecode.
 
 > [!note]- First Mover Advantage of Solidity
-> By and large, the majority of the blockchain ecosystem is focused on using Solidity as the main programming language for extending blockchains[^9]. Yet, a lot of interesting effort has also been put into allowing other programming languages to be used to write smart contracts. In some sense, Solidity is the Javascript of Web3; it is not perfect, but being first made it almost impossible to fully replace.
+> By and large, the majority of the blockchain ecosystem is focused on using Solidity as the main programming language for extending blockchains[^9]. Yet, a lot of interesting effort has also been put into allowing other programming languages to be used to write smart contracts. In some sense, Solidity is the JavaScript of Web3; it is not perfect, but being first made it almost impossible to fully replace.
 
 #### Anatomy of Smart Contracts
 [[Smart Contract]]s can be seen as their own mini [[State Machine]]s:
-- Having a program code that defines what they are (the byte-code)
+- Having a program code that defines what they are (the bytecode)
 - Having their own state, that is stored as a part of the broader blockchain [[State]]
-- While an implementation detail, in Ethereum and most smart contract blockchains, each *uploaded contract* is assigned an account (an address), which similar to user-accounts, can hold tokens and transact programmatically.
+- While an implementation detail, in Ethereum and most smart contract blockchains, each *uploaded contract* is assigned an account (an address), which similar to user accounts, can hold tokens and transact programmatically.
 
 Conceptually, we can summarize a smart-contract blockchain's overall state as follows:
 
@@ -75,7 +75,7 @@ This allowed Polkadot to not only host smart contracts (with relatively limited 
 
 > In this context, the *hosting blockchain* is often called the Layer-1 or L1 blockchain, and the blockchains being *hosted* (the rollups) are called Layer-2 or L2 blockchains. See [[The Layers Terminology]].
 #### Multi-chain Blockchain Ecosystems
-In some sense, multi-chain designs are a middle-ground between [[#Smart Contracts]] and [[#Custom Blockchains]]. A multi-chain ecosystem (such as Polkadot or Ethereum) offers solutions to the problems named above about [[#Custom Blockchains]], and in return offers greater flexibility and scalability to the entire ecosystem. The solutions being:
+In some sense, multi-chain designs are a middle-ground between [[#Smart Contracts]] and [[#Custom Blockchains]]. A multi-chain ecosystem (such as Polkadot or Ethereum) offers solutions to the aforementioned problems associated with [[#Custom Blockchains]], and in return offers greater flexibility and scalability to the entire ecosystem. The solutions being:
 - SDKs and standards to make building L2s easier (such as the OP-Stack and `polkadot-sdk` for Ethereum and Polkadot respectively)
 - The L2s derive parts of their [[Trustless]] properties from the much more secure L1.
 - The L2s have standardized way to communicate with one another, reducing fragmentation.
@@ -140,7 +140,7 @@ Contracts' ability to compose with one another is a great feature, yet it has al
 ### Metering and Gas
 As mentioned in the [[#Web3 Cloud Narrative]], an interesting side-effect of allowing smart contracts to run on blockchains is that the system starts to resemble the internet cloud companies that we know today; there is an **infrastructure provider**, on top of which you purchase your own VM or deploy a server-less code.
 
-In our case, the infrastructure provider is the host blockchain (e.g., Ethereum) and the smart contracts are the server-less codes that can be autonomously executed.
+In our case, the infrastructure provider is the host blockchain (e.g., Ethereum) and the smart contracts are the server-less code that can be autonomously executed.
 
 What if your server-less code starts maxing out the CPU/GPU to mine cryptocurrencies? What would the cloud provider do to protect themselves? They charge you more money.
 
@@ -153,7 +153,7 @@ This is why in smart-contract blockchains:
 If you ever interact with an Ethereum wallet, you might see signs of "gas" when you submit transactions. This is the upper bound on the gas amount that the user "promises" their execution of a contract will take and is willing to pay for it. The gas amount is then converted to an ETH equivalent and is charged from the user in return for the execution.
 
 > [!note]- Sponsored Transactions
-> Gas fees have been a major hurdle for [[Web3]] adoption so far. Imagine you would have to pay 10 cents every time you would send a message to your friends; no one would use such a messenger. There are two paths forward for this, both being explored by various blockchains:
+> Gas fees have been a major hurdle for [[Web3]] adoption so far. Imagine if you had to pay 10 cents every time you send a message to your friends, no one would use such a messenger. There are two paths forward for this, both being explored by various blockchains:
 >
 > 1. **Sponsored Transactions**: An ability for an application to pay on behalf of users, under certain criteria. For example, if a user has been verified to not be a bot, and has interacted with an application long enough, they would get a number of free transactions per day. See [EIP-3074](https://olympixai.medium.com/demystifying-eip-3074-sponsored-transactions-and-the-path-to-enhanced-ethereum-eoas-6eb0c60b7f35) as an example of this in Ethereum.
 > 2. **Scaling to the Extreme**: If blockchains take a number of exponential scaling steps forward, such that the [[Gas]] cost of even thousands of transactions per day and per user becomes negligible, then we can consider this issue solved. Even today, to send a message on a messenger, even though the messenger application is "free", we are paying an implicit cost by purchasing access to the internet, and often our private data is fee payment.
@@ -161,19 +161,19 @@ If you ever interact with an Ethereum wallet, you might see signs of "gas" when 
 > [!warn]- Gas Fees and [[DeFi]]
 > One of the reasons that [[DeFi]] has been a successful product of [[Web3]] is that financial applications are a class of applications where users can accept to pay small fees for every interaction. Even today, when we trade anything on a stock broker, or make transfers within our banks, we are often charged a small amount.
 
-This leads us to the next challenge: how should the smart-contract blockchain know *how much* gas to charge? This is where the concept of metering comes into play. [[Metering]] is a toolkit embedded in smart-contract virtual machines that allows them to *keep track of the execution cost of smart contracts as they are being executed*. Without going into too much detail, this metering machinery is then used to determine the gas cost of a transaction.
-### Determinisms
-Smart contracts, similar to blockchains, can only really work if they are always executed deterministically. This is why no smart contract (or blockchain) can send an HTTP request as a part of its [[STF]], read the current time, or store the weather in Lisbon during its execution. All of these values are non-deterministic by nature and would break the blockchain [[Consensus Algorithm]]. Imagine two different nodes of the network executing a smart contract at different times, and they get different values, because the weather in Lisbon has changed!
+This leads us to the next challenge: How should the smart-contract blockchain know *how much* gas to charge? This is where the concept of metering comes into play. [[Metering]] is a toolkit embedded in smart-contract virtual machines that allows them to *keep track of the execution cost of smart contracts as they are being executed*. Without going into too much detail, this metering machinery is then used to determine the gas cost of a transaction.
+### Determinism
+Smart contracts, similar to blockchains, can only really work if they are always executed deterministically. This is why no smart contract (or blockchain) can send an HTTP request as part of its [[STF]], read the current time, or store the weather in Lisbon during its execution. All of these values are non-deterministic by nature and would break the blockchain [[Consensus Algorithm]]. Imagine two different nodes of the network executing a smart contract at different times getting different values because the weather in Lisbon has changed!
 ### Upgradability
 Since we have discussed the evolution of [[State Machine]]s in this chapter, it is also worth exploring how the [[STF]] of these systems can be upgraded.
 #### Hard Forks
-The most standard way to upgrade a blockchain is basically letting it [[Fork]], but in a coordinated manner, which is called a "hard fork". All nodes of the network upgrade their code to start using a new [[STF]] at a certain future block. If the majority do this, the blockchain essentially upgrades after this point. Some nodes might be left behind and form a minority fork, which is why this is still called a _fork_.
+The most standard way to upgrade a blockchain is basically letting it [[Fork]], but in a coordinated manner, which is called a "hard fork". Network nodes upgrade their code to start using a new [[STF]] at a certain future block. If the majority do this, the blockchain essentially upgrades after this point. Some nodes might be left behind and form a minority fork, which is why this is still called a _fork_.
 #### Hot Upgrades
 Some networks have implemented more sophisticated ways to upgrade their [[STF]] without the coordination needed to do a hard fork. One example is [[Polkadot]], which stores its own STF as a part of the [[State]]. A privileged transaction (often requiring supermajority of DOT holders to approve of it) can update this part of the state storing the STF code. Once done, from the next block, all nodes will automatically see the new STF code without any hard forking coordination needed. See [[Polkadot#STF Stored In The State|this section about Polkadot]] for more information.
 #### Smart Contracts
 Smart contracts are designed to be immutable by default. This is a rule that might sound strange at first, but it makes perfect sense if we remember our grounding in that the ultimate purpose of blockchains is to be [[Trustless]].
 
-Imagine a smart contract that you use is providing a financial service to you today. You have verified this contract to be correct once, and knowing it runs on a secure smart-contract blockchain like Ethereum, you have all the reasons to have your [[Trust#Science-based Trust|science-based trust]] in it. Would you continue to trust it if you knew the developer who uploaded the contract would have the privilege to change the contract's code at any time? Obviously no.
+Imagine a smart contract that you use is providing a financial service to you today. You have verified this contract to be correct once, and knowing it runs on a secure smart-contract blockchain like Ethereum, you have all the reasons to have your [[Trust#Science-based Trust|science-based trust]] in it. Would you continue to trust it if you knew the developer who uploaded the contract had the privilege to change the contract's code at any time? Obviously no.
 
 This is why smart contracts are immutable by default. Once uploaded, they can never be re-uploaded or even taken down again.
 

@@ -36,17 +36,18 @@ A sharded blockchain, as explained above, would have some requirements in order 
 - [[Scaling Out - Shared Economic Security]]
 - [[Scaling Out - Optimistic (Non-)Execution]]
 - [[Scaling Out - SNARKs]]
+
 We do need extra requirements, which are explained next.
 
 All of the above three scaling methods rely more or less on the same flow, as follows:
-- First, recall that the base-blockchain and its secure validator set is called the L1.
+- First, recall that the base blockchain and its secure validator set are called the L1.
 - We acknowledge that we cannot have the classical [[Introduction - Why Scaling Matters#Sequential Blockchains|sequential model]] where a single validator in L1 produces a block with all of the work done in it, and all other validators re-execute it.
 - Instead, we rely on a new model where some work (e.g. producing a new L2 [[Block]]) is performed by an entity outside of the validator set of L1.
 	- These entities can often be seen as managing their own secondary blockchain, and are called [[The Layers Terminology|L2s]][^4].
 	- In the Ethereum realm, these entities that produce the L2 blocks are called [[Sequencer]]s, while in [[Polkadot]] they are called [[Collator]]s.
 - The purpose of the L2s is to do as much of the computation on their side to help the L1 scale, but still derive their security (being [[Trustless]] and having [[Economic Security]]) from the L1.
 
-Crucially, for the L2s to be able to achieve the last point above, it must:
+Crucially, for the L2s to be able to achieve the last point above:
 1. The L1 validators need to be able to reconstruct the data to inspect the work done by the L2 for some period of time, and potentially re-execute it or settle any issues in it. This is solved by a system called the [[Data Availability]] layer that all L1 blockchains have to provide.
 2. The L1 validators need to establish the correct order of the L2 blocks, and its state. This is done by recording only a [[Commitment Hash]] of the L2 blocks and state in L1.
 3. If necessary, actually re-execute the L2 block in some way (another main pillar of a [[Trustless]] system).
@@ -58,7 +59,7 @@ The main differentiating factor between this chapter's scaling method and upcomi
 ## Full Re-Execution
 In this model, used in [[Polkadot]] and NEAR, the work done by the L2s is always re-executed by a subset of the L1 validators to ensure its correctness. To do so, two things must happen:
 1. The L1 validators need to be able to reconstruct the L2 [[Block]] (or blocks, if multiple are being re-executed at the same time). This is done by the [[Data Availability]] system.
-2. The L1 validators need to have access to a subset of the L2 state, because the verification of the L2 block being re-executed depends on it. This is done by attaching a subset of the [[Merkel Tree]] of the L2 [[State]] and spreading it alongside the block. This is what was formerly called a [[State Proof]].
+2. The L1 validators need to have access to a subset of the L2 state, because the verification of the L2 block being re-executed depends on it. This is done by attaching a subset of the [[Merkle Tree]] of the L2 [[State]] and spreading it alongside the block. This is what was formerly called a [[State Proof]].
 
 ## Summary
 In the [[Scaling Out - Shared Economic Security]] model, the verification of the L2 work happens by the virtue of literally re-executing it enough times and by a subset of L1 validators, such that the probability of fraud is effectively 0.

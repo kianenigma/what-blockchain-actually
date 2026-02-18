@@ -3,7 +3,7 @@ description: How independent blockchains send messages to one another and commun
 permalink: appendix/cross-chain
 ---
 
-Bridges are the primary way through which blockchains send messages to one another. These messages could also originate from tenants of each blockchain, for example a smart contract in blockchain A sending a message to a smart contract on blockchain B. Considering what we have learned about blockchain in this book, the scenarios that we are familiar with and need a bridge are:
+Bridges are the primary way through which blockchains send messages to one another. These messages could also originate from tenants of each blockchain, for example, a smart contract in blockchain A sending a message to a smart contract on blockchain B. Considering what we have learned about blockchain in this book, the scenarios that we are familiar with and need a bridge are:
 - Two independent L1s with their own validator set and [[Economic Security]] like Ethereum and NEAR exchanging messages.
 - Two L2 blockchains connected to the same L1 exchanging messages.
 - Two L2 blockchains connected to different L1s exchanging messages.
@@ -43,7 +43,7 @@ The most appropriate way to solve the above is using a technology that we are al
 ![[Bridges And Cross Chain Messaging 2025-12-23-21.25.20.excalidraw]]
 
 This method is the most secure and [[Trustless]] way of bridging[^3], and we shall see next why its main competitor is not.
-## Multisig or Guardian Based
+## Multisig or Guardian-Based
 The alternative to the above, which is sometimes used either because a said blockchain is incapable of having a light node, or merely due to deploying a product fast, is replacing the proofs and light nodes with a set of entities/people/organizations (often a multisig) that promise to monitor different chains, and relay correct messages.
 
 This method is obviously not [[Trustless]], and there have been many, many hundreds of millions of dollars lost in this industry so far, due to their shortcomings.

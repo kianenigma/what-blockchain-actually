@@ -20,20 +20,20 @@ This chapter will then revise these three properties (and to some extent explain
 - While doing this, I can also know exactly in what order the previous transactions/blocks of Ethereum mutated its state to reach the current state.
 - This gives us the **auditable history** and **correct ordering** property.
 ### Accessible
-- Then, the above is of not much value if only a small group of people have access to the system, or a person can be banned arbitrarily. Ideally, interacting with a blockchain system is accessible to anyone who has access to the internet and consumer hardware.
+- Then, the above is not of much value if only a small group of people have access to the system, or a person can be banned arbitrarily. Ideally, anyone with Internet access can interact with a blockchain system on consumer hardware.
 - Any limitation should be coded in a transparent way and not be arbitrarily changeable.
-	- For example, if you don't have ETH tokens, you cannot interact with the Ethereum network. This is not a limitation on the accessibility, as it is a transparent rule of the system. In contrast, the OFAC sanctions suddenly ruling out some accounts as blacklisted is a less transparent exclusion of some users.
+	- For example, if you don't have ETH tokens, you cannot interact with the Ethereum network. This is not a limitation on the accessibility, as it is a transparent rule of the system. In contrast, [OFAC sanctions](https://en.wikipedia.org/wiki/Office_of_Foreign_Assets_Control) suddenly ruling out some accounts as blacklisted is a less transparent exclusion of some users.
 - This is why we argued in the previous chapter that a blockchain that is served to the entire world via one gigantic RPC server in the control of one company is NOT ACCESSIBLE, and therefore NOT [[Trustless]]. Or at least, not fully.
 - Achieving accessibility in blockchains is ultimately a more fuzzy dimension, and it depends on how much effort a given blockchain network/company puts into it. One of the core pieces of technology, though, that we have learned about and which significantly enables accessibility is a blockchain's ability to have [[Blockchain Networks#Light Node|Light Nodes]][^4].
 
 Now, with that out of the way, let's see what role a blockchain exactly plays in this.
 ## Blockchain's Role
-The starting scenario to understand the exact role of a blockchain is as follows: imagine we have a known correct order of five transactions in two previous blocks ($[tx_1, tx_2, tx_3]$ and $[tx_4, tx_5]$). How can a new participant append a $tx_6$ while preserving the order of all the previous transactions? A blockchain is an efficient means of solving this very problem.
+The starting scenario to understand the exact role of a blockchain is as follows: Imagine we have a known correct order of five transactions in two previous blocks ($[tx_1, tx_2, tx_3]$ and $[tx_4, tx_5]$). How can a new participant append a $tx_6$ while preserving the order of all the previous transactions? A blockchain is an efficient means of solving this very problem.
 
 A blockchain proposes to:
 - Bundle all transactions that are being added, in the right order, into a single ***block** of transactions*
 - Chain this new block to the previous one by putting a `parent_hash` field in its header, which points to the hash of the previous block.
-- If all blocks do this, then the contents of all blocks are made immutable because the chain of `parent_hash`es is always containing a commitment to all previous blocks, in that exact order.
+- If all blocks do this, then the contents of all blocks are made immutable because the chain of `parent_hash`es always contains a commitment to all previous blocks, in that exact order.
 
 Consider the following diagram, in which $block_{n-2}$ is known with its three transactions, and $block_{n-1}$ with two. $block_n$ is the new one that is meant to be added.
 
@@ -85,7 +85,7 @@ flowchart LR
 	- Then the hash of $block_{n-1}$ is no longer `def`
 	- And since `hij` contained `def` as its input, the `current_hash` of $block_n$ would be different.
 - And notice that $block_{n-1}$ is doing the exact same thing!
-- In essence, this creates a blockchain: an **immutable** and **append-only** list of blocks.
+- In essence, this creates a blockchain: an **immutable** and **append-only** linked list of blocks.
 	- It is immutable because each block contains the hash of the previous block in it.
 - This immutability chain extends all the way to the first block, with the same flow explained above.
 
@@ -96,19 +96,20 @@ Going back to the example at the beginning of [[#Blockchain's Role|this section]
 So, let's compare what part of [[#How Blockchains Are Trustless]] is in the domain of [[#Blockchain's Role]].
 - A blockchain is NOT the technology that delivers **verifiable** execution, (in my opinion) the most magical property of blockchain systems. This is mainly achieved by the incentive mechanisms in the [[Consensus Algorithm]][^1].
 - A blockchain is NOT the technology that makes the system **accessible**. This is achieved by leveraging [[Blockchain Networks#Light Node|light nodes]], [[State Proof]]s, avoiding large RPC providers becoming the dominant user gateway, and keeping the hardware requirements of participating in the network within a reasonable limit, among other considerations.
+
 In contrast,
 - The blockchain is part of the reason that we know the **correct ordering** of past events.
 - Consequently, the blockchain is part of the reason we can **audit the past events** of the blockchain, by helping us know that these past events are correct.
 
 > [!info] Summary
-> A blockchain, as a data structure, is an **append-only list of transactions** with an easy way to ensure the history is not tampered with, mainly through chaining blocks of data together via the header's parent hash mechanism explained above.
+> A blockchain, as a data structure, is an **append-only list of transactions** with an easy way to ensure the history was not tampered with, mainly through chaining blocks of data together via the header's parent hash mechanism explained above.
 ## Summary: Means to an End
 The true learning here is that **blockchains are a means to an end**. The goal is to create [[Trustless]] global computers and [[State Machine]]s, capable of performing computation with properties of science-based trust, not being at the mercy of human-based trust to uphold their promise of "not being evil," but rather us being able to verify it.
 
 Blockchain, as a data structure, *contributes* to this goal by giving us a system that allows the history to be recorded and audited in an efficient way; that's all.
 
 > [!tip]- Sneak peek
-> In [[The Bigger Picture]], we take this a step further and explain how building these [[State Machine]]s that can do computation [[Trustless]]ly is also part of a bigger picture and is not the only technology that we need for it.
+> In [[The Bigger Picture]], we take this a step further and explain how building these [[State Machine]]s that can do computation [[Trustless]]ly is also part of the bigger picture and is not the only technology that we need for it.
 
 [^1]: or as we will learn much later, via [[Scaling Out - SNARKs]].
 [^3]: See [[Proof of Work and Proof of Stake]] for a bit more detailed explanation of how this is achieved. In short, it boils down to [[Economic Security]].
