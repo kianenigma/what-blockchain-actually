@@ -1,0 +1,1 @@
+Analogous to [[Sequencer]], but in the Polkadot ecosystem. 

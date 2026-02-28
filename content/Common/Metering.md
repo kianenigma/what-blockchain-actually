@@ -1,0 +1,1 @@
+The ability for a [[Smart Contract]] blockchain to know exactly how much [[Gas]] a smart contract is executing as it is being executed. See [[Gas]] for why this is needed. 

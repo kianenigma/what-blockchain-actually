@@ -1,0 +1,3 @@
+A measure for the cost of execution of some code (usually a [[Smart Contract]] invocation) on a blockchain, that has to be *paid by someone*, much like you needing to pay for your VPS in Digital Ocean with credits or some other means of payment.
+
+All [[Smart Contract]] blockchains require a transaction to pay for the upper bound of its gas cost upfront, and any excess is potentially refunded later. This is because the smart contract blockchain has no reason to trust the code of the smart contract and needs to be sure that cost of the execution of this smart contract is paid upfront. It then uses [[Metering]] to keep track of how much gas is actually being used, and if more gas than what was paid for is used, the execution aborts.

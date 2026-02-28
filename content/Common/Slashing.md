@@ -1,0 +1,1 @@
+The act of a blockchain protocol autonomously deciding to punish [[Validator]] for any misbehavior, through taking their locked tokens ([[Staked Token]]) away from them. Many [[Proof of Work and Proof of Stake#Proof of Stake|proof of stake]] blockchains have some form of slashing to further improve their [[Economic Security]].
