@@ -30,3 +30,5 @@ Ultimately, my choice of the word **trustless** and limiting it to the above **3
 	- Censorship Resistant
 
 I find all of this different rephrasing of what I called [[Trust#Science-based Trust]].
+
+Interestingly, Vitalik has used this term extensively in his writings around the first publishing date of this book (start of 2026), as a part of the [Truslessness manifesto](https://trustlessness.eth.limo/general/2025/11/11/the-trustless-manifesto.html)
