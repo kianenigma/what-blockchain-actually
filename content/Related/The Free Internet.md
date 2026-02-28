@@ -1,5 +1,0 @@
----
-draft: true
----
-
-- How free is the internet really? DNS? Email? big players? 

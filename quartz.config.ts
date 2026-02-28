@@ -70,6 +70,7 @@ const config: QuartzConfig = {
 
       // Note: must come before ObsidianFlavoredMarkdown
       Plugin.Excalidraw(),
+      Plugin.BeautifulMermaid(),
 
       Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
       Plugin.GitHubFlavoredMarkdown(),
