@@ -7,13 +7,13 @@ This part of the book is entirely dedicated to giving you a high-level understan
 
 We did argue that scaling is likely no longer the frontier issue of [[Web3]], but nonetheless it is very useful to understand how blockchains scale their computational and storage capacities.
 
-Scaling is also particularly important as it allows for more **Innovation** and **entropy** to happen at a low cost. In 2017, it was very hard to innovate further on Ethereum as doing anything on Ethereum incurred very high [[Gas]] fees, so very few people dared to even try. Today, because blockchains have scaled further, we might not need to worry about e.g. the expensive cost of [[State]] as much and at least build *prototypes* of new products that use the blockchain state for all of their data, and do more of their computation [[Onchain and Offchain|onchain]], while we wait for more low-cost solutions to this, as noted in [[The Bigger Picture#Storage]].
+Scaling is also particularly important as it allows for more **innovation** and **entropy** to happen at a low cost. In 2017, it was very hard to innovate further on Ethereum as doing anything on Ethereum incurred very high [[Gas]] fees, so very few people dared to even try. Today, because blockchains have scaled further, we might not need to worry about e.g. the high cost of [[State]] as much and at least build *prototypes* of new products that use the blockchain state for all of their data, and do more of their computation [[Onchain and Offchain|onchain]], while we wait for more low-cost solutions to this, as noted in [[The Bigger Picture#Storage]].
 
 ## Sequential Blockchains
 The foundation for all blockchain scaling methods hinges on understanding how a *non-performant* (or not scaled) blockchain works. I tend to call these **sequential blockchains**, as they work in a purely sequential manner, much like the old single-core CPUs.
 
-To understand these systems, it is useful to see the entire [[Validator]] (or [[Miners]]) set of the network **as one CPU core**. This is because, under normal circumstances, this entire validator group must do the following for any computation to be correct:
-- One of the [[Validator]]s in the network decides to [[Blockchain Networks#Authoring Nodes|author]] a new block. Which node does this is decided by the [[Consensus Algorithm]].
+To understand these systems, it is useful to view the entire [[Validator]] (or [[Miners]]) set of the network **as one CPU core**. This is because, under normal circumstances, this entire validator group must do the following for any computation to be correct:
+- One of the [[Validator]]s in the network decides to [[Blockchain Networks#Block-authoring Nodes|author]] a new block. Which node does this is decided by the [[Consensus Algorithm]].
 - All other [[Validator]]s of the network re-execute and re-check the same block.
 	- This re-execution is the essence of the network's verifiable execution.
 - A lot of time is wasted in between to account for network propagation. This is why the block time of many blockchains with large validator sets is in the order of a handful of seconds, not less. For example, Ethereum uses a 12s [[Block Time]] as of now.
@@ -33,12 +33,12 @@ Before going further, a brief note about vertical scaling vs. horizontal scaling
 ### Limitations of Vertical Scaling
 For vertical scaling to grow indefinitely, we can only rely on Moore's law, noting that hardware speed seems to double every 2 years. As it stands, there is a debate about whether this law is still valid or not, but we can certainly say a few points about it:
 - We have already reached certain physical limits that make further speed gains in future chips not as easy and cheap to achieve as the previous ones.
-- Modern interpretations of the Moore's law indicate that the *cost of the same hardware would halve every two years*, not its speed doubling. This necessitates some use of horizontal scaling, as it implies that to get the same output from a hardware, we can buy multiple instances of it for the same cost.
+- Modern interpretations of Moore's law indicate that the *cost of the same hardware would halve every two years*, not its speed doubling. This necessitates some use of horizontal scaling, as it implies that to get the same output from a hardware, we can buy multiple instances of it for the same cost.
 - Even if Moore's law has been correct thus far and continues to remain so, we cannot turn a blind eye to the fact that today, **almost all global-scale software in the world is working on the basis of horizontal scaling**. No Google-sized company is putting their bets on building one mega-super-computer, and are instead building clusters of multiple machines to scale their business to a global scale.
 
 > Vertical scaling simply doesn't seem to be the right approach for global-scale applications as it stands.
 
-For horizontal scaling to grow indefinitely, there is no limitation, as we can always build more machines of the same speed as the past. Ideally, the cost of hardware gets less, so scaling can happen only cheaper as time goes by.
+For horizontal scaling to grow indefinitely, there is no limitation, as we can always build more machines of the same speed as the past. Ideally, the cost of hardware decreases, so scaling can happen only cheaper as time goes by.
 ### Overhead of Horizontal Scaling
 While horizontal scaling is certainly more promising in terms of its [[#Limits]], it is true that it introduces more overhead. In our scenario above, imagine if we split a single machine into two different machines, the work is not yet done:
 - We need to connect the two machines via a high-speed network connection
@@ -56,6 +56,6 @@ Before going to the next chapters and discussing different approaches, it is wor
 - [[Scaling Out - Shared Economic Security]]: Polkadot
 - [[Scaling Out - Optimistic (Non-)Execution]] and [[Scaling Out - SNARKs]]: Primarily in Ethereum
 ## Summary
-Sequential blockchains operate as such: the entire validator set must work in coordination for a period of time known as [[Block Time]] to process one package of work, a [[Block]]. Different scaling methods discussed in the upcoming chapters are ways to extract more work out of this group of validators.
+Sequential blockchains operate as follows: The entire validator set must work in coordination for a period of time known as [[Block Time]] to process one package of work, a [[Block]]. Different scaling methods discussed in the upcoming chapters are ways to extract more work out of this group of validators.
 
 The main two ways to scale any digital system is either vertically or horizontally. Vertical scaling is more limited, but is simpler and has less architectural overhead. Horizontal scaling is exactly the opposite.
