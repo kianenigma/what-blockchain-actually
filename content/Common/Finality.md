@@ -5,7 +5,7 @@ Initial blockchains like Bitcoin have no finality mechanism, and by convention, 
 Many modern blockchains deploy a separate finality mechanism, which forces validators to vote and sign-off on blocks, and once enough subset of validators have voted, a block is considered final.
 
 Finality has a number of useful use-cases: 
-- When two blockchains send messages to one another (see [[Bridges And Cross-Chain Messaging]]), assuming they trust each other's [[Consensus Algorithm]] and finality, they can consider the message as "sent and not reversible", and act upon it.
+- When two blockchains send messages to one another (see [[Bridges and Cross Chain Messaging]]), assuming they trust each other's [[Consensus Algorithm]] and finality, they can consider the message as "sent and not reversible", and act upon it.
 - Centralized exchanges can use it to settle user deposits. 
 
 > [!note]- Note on Centralized Exchanges Ignoring Finality
