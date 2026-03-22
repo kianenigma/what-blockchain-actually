@@ -15,7 +15,7 @@ Recall a blockchain's ultimate purpose is to store some **([[Blockchain and Cont
 
 $$
 \begin{aligned}
-STF(State_n, Block_n+1) \rightarrow State_{n+1}
+STF(block_{n+1}, state_n) \rightarrow state_{n+1}
 \end{aligned}
 $$
 or in the [[Execution, Ordering and History#State Machine|state machine language]]:
@@ -25,10 +25,11 @@ y(("state n")) -->|"STF(state n,block n+1)"| yp(("state n+1")) -->|" STF(state n
 ```
 
 A [[Block]] is composed of a [[Block Header]], and a set of instructions. In most cases, these instructions come from external users and are called [[Transaction]]s. The block header contains a few key pieces of information, most notably:
-- **Block Height**: A number ($N$, $N-1$, ..) indicating the number for this block. This is called the **block height**, and should only ever increment by 1.
-- **StateRoot**: A [[Commitment Hash]] (in the form of a [[Merkel Tree]]) to the state of the blockchain after execution of this block and all of the transactions in this block. This is called the [[State Root]].
-- **Parent Hash**: The hash of the parent block on top of which this block is meant to be considered valid.
-- **Block Hash**: The hash of the current block, so that the next potential block can link back to it.
+- A number ($N$, $N-1$, ..) indicating the number for this block. This is called the **block height**, and should only ever increment by 1.
+- A [[Commitment Hash]] (in the form of a [[Merkle Tree]]) of the blockchain state after executing a block and its transactions. This is called the [[State Root]].
+- The hash of the parent block on top of which this block is meant to be considered valid.
+- The hash of the current block, so that the next potential block can link back to it.
+- These hashes, combined together, ensure some of the [[Trustless]] properties of blockchains.
 
 These hashes, combined together, ensure some of the [[Trustless]] properties of blockchains, explored later in [[Blockchains Are Overrated#Blockchain's Role]].
 

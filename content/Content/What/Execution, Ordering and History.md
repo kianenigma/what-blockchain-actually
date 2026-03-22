@@ -43,27 +43,28 @@ TODO:
 ### Counter Example: Running Open Source Code 
 What about me running an open source code on my server/machine, and letting you verify it however you want?
 
-Yes, that would partially work too, but then we are faced with a number of other challenges. Suppose I am the untrusted party that you want to interact with. Even if I show you the source code ($F$) of what I am about to execute on my machine, how would you know my machine actually did that? Perhaps you want to re-execute the same thing in your computer. If you go down this rabbit hole and do it right, you end up re-inventing all of the core technological pieces of what a blockchain does, explained in this chapter and the next one.
+Yes, that would partially work too, but then we are faced with a number of other challenges. Suppose I am the untrusted party that you want to interact with. Even if I show you the source code ($F$) of what I am about to execute on my machine, how would you know my machine actually did that? Perhaps you want to re-execute the same thing on your computer. If you go down this rabbit hole and do it right, you end up re-inventing all of the core technological pieces of what a blockchain does, explained in this chapter and the next one.
 ## Ordering
 Then, imagine we have two subsequent transfers in a cryptocurrency-like system, $x_1$ and $x_2$:
 - $F(x_1, y) \rightarrow y_1$
 - $F(x_2, y) \rightarrow y_2$
+
 And in both, $F$ is executed correctly.
 
-But, we still need to decide *whether $x_1$ happened first or $x_2$*. Imagine Alice has 10 dollars. $x_1$ is meant to credit 5 to Alice, and $x_2$ is meant to debit 12 from her. The second transfer is successful IFF $x_1$ happens before $x_2$, but not the other way.
+But, we still need to decide *whether $x_1$ happened first or $x_2$*. Imagine Alice has 10 dollars. $x_1$ is meant to credit 5 to Alice, and $x_2$ is meant to debit 12 from her. The second transfer is successful iff $x_1$ happens before $x_2$, but not the other way.
 
 So, we need to establish an order for $x_1$ and $x_2$:
 - $F(x_1, y) \rightarrow y_1$, and then $F(x_2, y_1) \rightarrow y_{12}$ or
 - $F(x_2, y) \rightarrow y_2$, and then $F(x_1, y_2) \rightarrow y_{21}$
 
-This is when we realize that a blockchain has to **not only execute its said code/rules**, but also has to **determine the correct order of inputs**. Without going into how this is achieved, you can take for granted for now that blockchains do solve this problem by establishing a correct order of events. This is often called the **canonical** order.
+This is when we realize that a blockchain has to **not only execute its said code/rules**, but also has to **determine the correct order of inputs**. Without going into how this is achieved, you can take for granted for now that blockchains do solve this problem by establishing a correct order of actions. This is often called the **canonical** order.
 
 > In the blockchain terminology, this situation above is called a [[Fork]]: two competing outcomes, fighting to be established as the canonical one.
 
 ## Auditing
 But is this enough? Yes and no.
 
-Suppose we are given the current state of the system, after $n$ mutations, $y_{n+1}$. Without any further means, we would have to trust that $F(x_0, y)$ all the way up until $F(x_n, y)$ has been executed correctly.
+Suppose we are given the current state of the system, after $n$ mutations, $y_{n+1}$. Without any further means, we would have to trust that $F(x_0, y_0)$ all the way up until $F(x_n, y_n)$ has been executed correctly.
 
 One great additional property of [[Trust#Science-based Trust|science-based trust]] is that, because it is based on rules of math and science, it is **easily auditable**. As in, given the public and permissionless rules of the system, one can easily re-execute $F(x_0, y_0)$ all the way up to $F(x_n, y_n)$, and come to the conclusion that $y_{n+1}$ was indeed correct for themselves.
 
@@ -93,8 +94,8 @@ Finally, we can introduce another useful mental model for blockchains, similar t
 So, to take our above example, $F(x, y) \rightarrow y\prime$, and model it as a state machine:
 - $F$ is the [[State Transition Function]] or [[STF]].
 - $y$ is the current state.
-- $x_1$ / $x_2$ are the *inputs* to the mutation.
-- $y\prime$ is the new state.
+- $x_1$ and $x_2$ are the *inputs* to the mutation.
+- $y\prime$ and $y\prime\prime$ are the updated states.
 
 ```mermaid
 graph LR
@@ -103,7 +104,7 @@ y((y)) -->|"F(x1,y)"| yp(("y'")) -->|"F(x2,y')"| ypp(("y''"))
 ## Summary
 This chapter was our first step towards a more concrete definition of blockchains. Within it, we modeled blockchains as a system that can do the following:
 - It is a **verifiable** computer that executes some code (its defined set of rules) correctly.
-- While doing so, it maintains a **canonical order** of events.
+- While doing so, it maintains a **canonical order** of actions.
 - It retains enough information for anyone to **re-audit the entire** history.
 
 We also noted that instead of a computer, a [[State Machine]] analogy can be used. This in fact summarized our main three abstract mental models to think about blockchains, all three of which are listed in [[Blockchain Models]].

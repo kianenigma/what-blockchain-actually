@@ -6,7 +6,7 @@ permalink: appendix/moon-math
 
 This chapter gives a very high level overview of the three technologies that are often called "Moon Math" or "Programmable Cryptography". They have all advanced significantly in the last decade thanks to the [[Web3]] space's need for them.
 
-## ZKP - Zero Knowledge Proofs
+## ZKP - Zero-Knowledge Proofs
 We are essentially discussing the same technology as in [[Scaling Out - SNARKs]] here. ZKPs allow for some computation to happen, and while being computed, a proof of it can also be generated. These proofs are expensive to compute, but verifying them is much cheaper. Moreover, this proof can optionally choose to not reveal much information about what it was computing upon to the future verifiers. The most intuitive example to understand this is proving that your age is more than 18, without revealing what the actual age is. The same technology can later be used to build a wide class of applications:
 - Confidential voting
 - Private token transfers[^1]
@@ -25,7 +25,7 @@ There are two broad classes of ZKPs: SNARKs and STARKs. We have used the former 
 	- The proof verification takes more time.
 But other than this, STARKs have better security properties, such as being quantum-resistant and not needing a trusted setup: a setup ceremony where many users contribute random inputs to the protocol to establish initial secrets. If this setup is compromised, the whole protocol is flawed irreversibly.
 ## FHE - Fully Homomorphic Encryption
-While the name is not very intuitive, FHE is a set of primitives that allows someone to **perform computation on encrypted data**. Similar to [[#ZKP - Zero Knowledge Proofs]], computing FHEs is many orders of magnitude more expensive than doing the raw public computation.
+While the name is not very intuitive, FHE is a set of primitives that allows someone to **perform computation on encrypted data**. Similar to [[#ZKP - Zero-Knowledge Proofs]], computing FHEs is many orders of magnitude more expensive than doing the raw public computation.
 
 An idealistic use case of FHEs could be AI inference; suppose I have a model and I want to allow you to use it without revealing the weights. In theory, FHE can be used such that you can use the model and compute your inference, but on an encrypted model and not the plaintext one.
 
@@ -35,7 +35,7 @@ Multi-party computation is in some sense a distributed analog of [[#FHE - Fully 
 ## Programmable Cryptography
 Ultimately, the outcome of the 3 is also sometimes called (other than the fancy "moon math"): programmable cryptography. This is because we are seeing a similar trend as to what we saw in [[Evolution of Blockchain State Machines]] in these cryptographic primitives as well.
 
-A decade ago, ZCash already managed to use the very same [[#ZKP - Zero Knowledge Proofs]] to create private token transfers on its blockchains. But neither the blockchain, not the cryptographic primitives were programmable. Today, ZK-VMs like Risc-0 allow you to write any applications, in modern languages like Rust, and generate a proof of it while it is being executed. Similarly, there are ZK-EVMs, that allow the execution of EVM byte-code while generating a proof for it.
+A decade ago, ZCash already managed to use the very same [[#ZKP - Zero-Knowledge Proofs]] to create private token transfers on its blockchains. But neither the blockchain, not the cryptographic primitives were programmable. Today, zkVMs like [RISC Zero](https://risczero.com/) allow you to write any applications, in modern languages like Rust, and generate a proof of it while it is being executed. Similarly, there are zkEVMs, that allow the execution of EVM bytecode while generating a proof for it.
 ## Examples
 - [ZAMA Protocol](https://docs.zama.org/) uses all three of the above technologies in their protocol and is a great case study.
 - [Ethproofs](https://ethproofs.org/): The race to prove all Ethereum L1 blocks within 12s (in real-time) with consumer GPUs.

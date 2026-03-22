@@ -13,7 +13,7 @@ The most high-signal way to summarize the first important property of blockchain
 
 ```mermaid
 graph LR
-y(("$$y$$")) -->|"$$F(x_1,y)$$"| yp(("$$y_1$$")) -->|"$$F(x_2,y_1)$$"| ypp(("$$y_2$$"))
+y(("$$y_0$$")) -->|"$$F(x_1,y_0)$$"| yp(("$$y_1$$")) -->|"$$F(x_2,y_1)$$"| ypp(("$$y_2$$"))
 ```
 
 And keeping in mind that this computation, and its consequent storage updates, assuming the blockchain is implemented properly, adhere to all three properties of a [[Trustless]] system:
@@ -29,10 +29,10 @@ This expensiveness can be expressed in at least two ways:
 	- How often the blockchain produces new [[Block]]s (the [[Block Time]]).
 	- What is the maximum computation/storage that can be fit in a single block. Almost all blockchains impose maximum resource consumption limits per-block. In the language of smart-contract chains, a maximum [[Gas]] that can be consumed by the entire block.
 ## [[Blockchain and Contention|Contentious]]
-The above will hopefully fully convey the point that a blockchain system is not well fitted for arbitrary computation and storage, but rather for those that bear enough importance or value that would justify the expensiveness (such as, of course, financial applications, ergo [[DeFi]]). This importance can be among the following, but not limited solely to these as new use-cases beyond my imagination might come up:
+The above will hopefully fully convey the point that a blockchain system is not well-fitted for arbitrary computation and storage, but rather for those that bear enough importance or value that would justify the expensiveness (such as, of course, financial applications, ergo [[DeFi]]). This importance can be among the following, but not limited solely to these as new use cases beyond my imagination might come up:
 - **Social** interactions that two parties that don't trust one another want to transact.
 - **Value-bearing** interactions such as DeFi.
-- **Sensitive** applications where the accessibility of a [[Trustless]] system is desired, such as whistleblowing. Imagine use-cases where it is desirable to know that once data or a [[Smart Contract]] is published, it cannot be taken down by any single individual or authority.
+- **Sensitive** applications where the accessibility of a [[Trustless]] system is desired, such as whistleblowing. Imagine use cases where it is desirable to know that once data or a [[Smart Contract]] is published, it cannot be taken down by any single individual or authority.
 ## Public
 Recall from [[Blockchain Networks]] that blockchains achieve most[^1] of their [[Trustless]] properties by having the [[Validator]]s of the network re-check the work of one another. This entails that everything that the blockchain does is **public by default**, or else other validators cannot re-check anything.
 
@@ -41,7 +41,7 @@ We emphasize "by default" because there are techniques to make this partially or
 > [!warn]- Block Explorers
 > This is why every blockchain has a notion of _Block Explorer_, a public dashboard where every block and every transaction and every account's activity is indexed. None of your banks have a public explorer where you can see the money that your neighbor spent.
 
-The main remedy to this in public blockchains, so far, has been using pseudonymous accounts. In that a user's identity is not mandatorily linked to an account ID that the blockchain recognizes[^2]. If care is taken, it is possible to keep an account ID anonymous. So, even though anyone can see *what* an account does, they cannot easily know *who* it is. Yet, with limited [[On and Off Ramp]] options, it is almost always the case that the centralized exchanges can always link an identity to an account ID.
+The main remedy to this in public blockchains, so far, has been using pseudonymous accounts. In that a user's identity is not mandatorily linked to an account ID that the blockchain recognizes[^2]. If care is taken, it is possible to keep an account ID anonymous. So, even though anyone can see *what* an account does, they cannot easily know *who* it is. Yet, with limited [[On and Off Ramp]] options, it is almost always the case that the centralized exchanges can link an identity to an account ID.
 
 > It is often said that having no privacy is the "original sin" of Bitcoin.
 ## Digital
@@ -61,7 +61,7 @@ Blockchains provide [[Trustless]] computation and storage primitives to develope
 
 As of now, blockchains do this in public, but this is not a fundamental limitation and with further performance improvements in the [[Moon Math - ZKP, FHE and MPC]] group of technologies, they could operate with much more privacy.
 
-They suffer from a high cost and slow speed to achieve the Trustless properties. At first sight, it is clear that use-cases that are social, [[Blockchain and Contention|contentious]] and digital are best fitted to be implemented by blockchains.
+They suffer from a high cost and slow speed to achieve the Trustless properties. At first sight, it is clear that use cases that are social, [[Blockchain and Contention|contentious]] and digital are best fitted to be implemented by blockchains.
 
 [^1]: To be precise, 2 out of 3, the verifiability and auditability.
 [^2]: Some chains allow you to optionally link an identity to your account ID, such as the ENS system in Ethereum.

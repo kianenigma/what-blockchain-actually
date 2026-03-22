@@ -35,7 +35,8 @@ JAM has no notion of a [[Rollup]] or Parachain, [[Governance]], and even tokens 
 Finally, JAM is leveraging two of its assets:
 - A new lean and register-based VM based on RISC-V (called PolkaVM)
 - Access to [[Data Availability]] for storing large transient data
-To allow, likely for the first time, the ability to write continuous code to be written in a blockchain and be executed fully [[Onchain and Offchain|onchain]]. By _continuous_, we mean a block of code that can take a minute or an hour to complete, and as the developer, we don't have to think about splitting this block of code into multiple small chunks that fit in a block.
+
+To allow, likely for the first time, the ability for continuous code to be written in a blockchain and to be executed fully [[Onchain and Offchain|onchain]]. By _continuous_, we mean a block of code that can take a minute or an hour to complete, and as a developer, we don't have to think about splitting this block of code into multiple smaller chunks that fit in a block.
 
 Under the hood, JAM does the following:
 - Execute the continuous code for as long as the gas permits within a block
@@ -46,7 +47,7 @@ Under the hood, JAM does the following:
 Needless to say, DOOM has been used as an example to demonstrate this[^1].
 
 This is a full circle to our comments on hosting any applications on the blockchain STF in an earlier chapter: [[Evolution of Blockchain State Machines#Hosting Any Application In Blockchain STF]]. Moreover, even then we pointed out that the comparison between how different blockchain protocols host continuous execution is [[Evolution of Blockchain State Machines#Not Always Apples To Apples|not always apples to apples]]. To the best of my knowledge, JAM is the only protocol that allows arbitrary long workloads to be executed [[Onchain and Offchain|onchain]] (assuming ELVES convinces you that the execution in-core is as [[Trustless]] as on-chain). Cardano has demonstrated running DOOM on an L2 environment as well, but this has significantly different properties to what JAM is doing:
-- The actual game-related work is all happening on an L2, which is in fact a state-channel, and only the opening and closing part of it is recorded and processed by Cardano L1 validators[^2].
+- The actual game-related work is all happening on an L2, which is in fact a state channel, and only the opening and closing part of it is recorded and processed by Cardano L1 validators[^2].
 - In contrast, in JAM, the game is actually being executed by JAM validators, the efficient scaling method of sharding execution while retaining shared security.
 
 [^1]: Search for topics like "[DOOM on Polkadot JAM](https://www.youtube.com/watch?v=hJcw5FMSjQs)" to learn more and see demos of this new technology in action.

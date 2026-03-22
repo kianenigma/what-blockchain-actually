@@ -34,7 +34,7 @@ book-index: true
 - Part 4: **Appendices**
 	- Topics that were mentioned in the above chapters, deserve a long description, but don't fit anywhere above.
 	- [[Proof of Work and Proof of Stake]]
-	- [[Bridges and Cross Chain Messaging]]
+	- [[Bridges And Cross-Chain Messaging]]
 	- [[Moon Math - ZKP, FHE and MPC]]
 	- [[TEE]] 
 	- 🏗️ [[Opinionated List of Products and Why]] (work in progress)
