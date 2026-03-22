@@ -5,12 +5,12 @@ permalink: what/big-picture
 
 To start this chapter, I will begin with a personal interpretation of the [[Web3]] space's history so far.
 
-I believe the space started with Bitcoin, which demonstrated that the basis of this technology, [[Trustless]] money, works. And soon after, Ethereum expanded this into a more general trustless [[State Machine]] that allows for more general forms of computation to happen [[Onchain and Offchain|onchain]] (aka [[Trustless]]ly).
+I believe the space started with Bitcoin, which demonstrated that the basis of this technology, [[Trustless]] money, works. And soon after, Ethereum expanded this into a more general trustless [[State Machine]] that allows for more general forms of computation to happen [[Onchain and Offchain|onchain]] (aka. [[Trustless]]ly).
 
 But, if we look back at the thought process of some of the thinkers of the blockchain space around this time[^1], it was always clear to them that a blockchain [[State Machine]], with its limited abilities (which we just studied in [[Properties Of Blockchain Systems]]) is not enough to deliver [[Web3]] at **scale** and for **all sorts of applications**. The trustless state machine is an important part of the system and can certainly be useful for some applications, such as [[DeFi]] (which is already thriving without anything else), and *parts of* others, but lacks many primitives that other web applications that act as an [[Authority]] use.
 
 Then, the next decade of the blockchain space was somehow spent around three main ideas:
-1. **Scaling**. A correct realization that the [[Trustless]] [[State Machine]] needs to scale, and a tremendous amount of resource went into it. We will cover this to some extent in [[Introduction - Why Scaling Matters]].
+1. **Scaling**. A correct realization that the [[Trustless]] [[State Machine]] needs to scale, and a tremendous amount of resource was put on it. We will cover this to some extent in [[Introduction - Why Scaling Matters]].
 2. **[[DeFi]]**. It turned out that there is one application with perfect PMF[^2] that can already be implemented with just a [[State Machine]][^3] and its limited computation and storage[^6].
 3. **Scams and Noise**. As noted in the first chapter, [[Web3]] implies [[Commoditization]] of creating certain financial applications (see [[What Is This All About?#Summary]]). Without a doubt, this has led to a lot of scams and noise. But while this should be combated, it is not necessarily a bad sign. It is further evidence that the accessibility aspect of being [[Trustless]] is real.
 
@@ -20,7 +20,7 @@ Then, the next decade of the blockchain space was somehow spent around three mai
 > I strongly believe that the blockchain space can be the subject of future retroactive studies on behavioral economy and similar fields.
 
 And sadly, all the while, it was forgotten that there were other verticals of Web3 other than the core "blockchain" that also deserve attention. And this is where we are, near the end of 2025:
-- The blockchain scalability has improved significantly. It is worth noting that this effort was not in vain, and it is indeed useful for further experimentation, but evidently not enough.
+- The blockchain scalability has improved significantly. It is worth noting that this was not an effort in vain, and it is indeed useful for further experimentation, but evidently not enough.
 - DeFi is still the main thriving product of Web3.
 - But not enough attention was given to adjacent technologies that allow Web3 to manifest. That being said, I believe this is starting to regain attention just now.
 ## Web3 Beyond DeFi
@@ -58,7 +58,7 @@ Identity and personhood are two disjoint but related missing concepts in both th
 - Identity is the act of identifying who an entity is, be it a person or not. An identity can be an organization, a person, or anything else.
 - Personhood is about knowing if an entity is a person or not, without necessarily identifying who they are.
 
-In Web2, both are solved through the virtue of the power of the centralized actor: collecting personal information (government documents, payment details), having the ability to ban you, and combining it with CAPTCHAs.
+In Web2, both are solved through the virtue of the power of the centralized actor: collecting personal information (government documents, payment details), having the ability to ban you, and combining it with captchas.
 
 Both of these challenges are a bigger threat in [[Web3]] for multiple reasons:
 - (specific to Web3) **The system promises accessibility**. Many Web2 platforms liberally protect themselves against the above by significantly lowering their degree of accessibility.
@@ -106,4 +106,4 @@ If we accept that [[DeFi]] is the only product that we can build with [[Web3]], 
 [^3]: Modulo the lack of privacy, but as noted, this could also be solved with some added [[Moon Math - ZKP, FHE and MPC|cryptography]].
 [^4]: Whisper is now [Waku](https://docs.waku.org/).
 [^5]: Skype was [peer-to-peer](https://en.wikipedia.org/wiki/Skype) at first, but it eventually moved to a client-server architecture. The name is actually derived from the combination of "sky" and "peer-to-peer".
-[^6]: In fact, [[DeFi]] was also most resilient against high gas fees and lack of scalability, as paying e.g. \$10 for a \$10k trade is still within reason given the high volatility and profit margins in DeFi.
+[^6]: In fact, [[DeFi]] was also most resilient against high gas fees and lack of scalability, as paying e.g. $10 for a $10k trade is still within reason given the high volatility and profit margins in DeFi.

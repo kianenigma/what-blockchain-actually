@@ -21,16 +21,16 @@ Blockchains have so far been tremendously successful in a vertical that revolves
 	- With prediction markets being a notable subset, which is essentially betting on future outcomes of events.
 
 We then speculated that this limited success has been understandable in retrospect and can be attributed to a few factors:
-- Monetary applications don't suffer from the lack of scaling as much as non-monetary ones and can attract users even if transaction fees are relatively high.
+- Monetary applications don't suffer from the lack of scaling as much as non-monetary ones and can attract users even if transaction fees are relatively expensive.
 - Monetary applications offer the opportunity to make money, which attracts a lot of people.
 ## Forgotten Goal
-And most importantly, it was all the while overlooked that blockchains were never the goal but rather a means to an end. The goal was to build digital systems and Internet applications that benefit[^2] their users by being [[Trustless]]. This new envisioned web was called [[Web3]]. As it stands, it seems like the blockchain industry has ever more forgotten about this original goal, and instead sees the blockchain [[State Machine]] and its properties as the goal itself. In this unambitious view, we would be satisfied with [[DeFi]] being the ultimate product of blockchains and changing the wheels of the *existing* financial system (as opposed to replacing it) is enough.
+And most importantly, it was all the while overlooked that blockchains were never the goal but rather a means to an end. The goal was to build digital systems and internet applications that benefit[^2] their users by being [[Trustless]]. This new envisioned web was called [[Web3]]. As it stands, it seems like the blockchain industry has ever more forgotten about this original goal, and instead sees the blockchain [[State Machine]] and its properties as the goal itself. In this unambitious view, we would be satisfied with [[DeFi]] being the ultimate product of blockchains and changing the wheels of the *existing* financial system (as opposed to replacing it) is enough.
 ## The Future
 > The most reliable way to predict the future is to create it.
 
 To finish on a brighter note, let's remember that within the chapters of this book so far, we have learned many of the tools necessary to reverse this trend:
 - We have learned what blockchains do, and while doing so we have emphasized greatly that a blockchain system is only meaningful when it is fully [[Trustless]].
-- By learning exactly what blockchains do, we can start looking at the world around us, in our daily online and real-life interactions, and find other areas where a system with the above description can be useful.
+- By learning exactly what blockchains do, we can start looking into the world around us, in our day-to-day daily online and real-life interactions, and find other areas where a system with the above description can be useful.
 - We have learned what other technologies are needed alongside blockchains to materialize the full [[Web3]] potential.
 
 [^1]: In some sense, betting on the future.
