@@ -24,7 +24,7 @@ or:
 
 ```mermaid
 graph LR
-y(("$$state_n$$")) -->|"$$STF(block_{n+1}, state_n)$$"| yp(("$$state_{n+1}$$")) -->|"$$F(block_{n+2}, state_{n+1})$$"| ypp(("$$state_{n+2}$$"))
+y(("state n")) -->|"STF(block n+1, state n)"| yp(("state n+1")) -->|"F(block n+2, state n+1)"| ypp(("state n+2"))
 ```
 
 A [[Block]] is composed of a [[Block Header]], and a set of instructions. In most cases, these instructions come from external users and are called [[Transaction]]s. The block header contains a few key pieces of information, most notably:
