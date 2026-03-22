@@ -21,7 +21,7 @@ All such forms of trust have a critical property in common: they are based on hu
 - They are **corruptible**[^3][^4]: the human(s) in charge might decide to take a different action than what the rules expect them to do, or not do anything at all. This is especially self-evident in people in positions of power, because ["*absolute power corrupts absolutely*"](https://www.acton.org/research/lord-acton-quote-archive).
 
 ```mermaid
-flowchart
+graph TB
 HT[Human-based Trust]
 HT --> Corruptible
 ```
@@ -31,7 +31,7 @@ We call these entities that we create, and then put our [[Trust]] into to let us
 With the advent of Bitcoin, a number of thinkers started to imagine: how could we build a system that is *as trustworthy as the aforementioned*, yet its reasons for trust are rooted not in humans, but rather in hard-science and well-understood laws thereof? Such trust would consequently not be susceptible to any sort of **corruption**. It would instead be: **verifiable trust**.
 
 ```mermaid
-flowchart
+graph TB 
 ST[Science-based Trust]
 ST --> Verifiable
 ```
@@ -59,15 +59,15 @@ This is exactly a step towards a process known as [[Commoditization]]: a product
 Therefore, we can add a new property to each category of [[Trust]]: accessibility.
 
 ```mermaid
-flowchart
-	subgraph " "
+graph TB
+	subgraph "Science-based"
 		direction TB
 		ST[Science-based Trust]
 		ST --> Verifiable
 		ST --> Accessible
 	end
 
-	subgraph " "
+	subgraph "Human-based"
 		direction TB
 		HT[Human-based Trust]
 		HT --> Corruptible
@@ -86,8 +86,8 @@ Human-based trust is corruptible and limited. Science-based trust, such as that 
 > There is a third property: that [[Trust#Science-based Trust|science-based trust]] is often **auditable**, at least in the way implemented in blockchains. More in [[Execution, Ordering and History]].
 
 ```mermaid
-flowchart
-	subgraph " "
+flowchart TB
+	subgraph "science-based"
 		direction TB
 		ST[Science-based Trust]
 		ST --> Verifiable
@@ -95,7 +95,7 @@ flowchart
 		ST --> Auditable
 	end
 
-		subgraph " "
+		subgraph "human-based"
 		direction TB
 		HT[Human-based Trust]
 		HT --> Corruptible

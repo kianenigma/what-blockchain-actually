@@ -5,30 +5,29 @@ The summary of a block is as follows, in which:
 - parent hash is linking this block to the previous one.
 - Block body is a list of [[Transaction]]s. 
 
+## Example Block Diagram
+
 ```mermaid
-graph TB
+graph LR
+	PrevBlock["Block #N-1"]
+	PrevPrevBlock["Block #N-2"]
+      subgraph Block["Block #N"]
+          direction TB
+          subgraph Header["Block Header"]
+              direction TB
+              BlockHash["Block Hash: 0x7f9a...3e2d"]
+              StateRoot["State Root: 0xa1d5...7c4b"]
+              ParentHash["Parent Hash: 0x4b8c...91f6"]
+          end
 
-    subgraph Block["Block #N"]
-        direction TB
-        subgraph Header["Block Header"]
-            direction TB
-            BlockHash["Block Hash<br/>0x7f9a...3e2d"]
-            ParentHash["Parent Hash<br/>0x4b8c...91f6"]
-            StateRoot["State Root Hash<br/>0xa1d5...7c4b"]
-        end
+          subgraph Body["Block Body"]
+              direction TB
+              Tx1["Tx 1: Alice → Bob 2.5 ETH"]
+              Tx2["Tx 2: Carol → Dave 1.0 ETH"]
+              Tx3["Tx 3: Eve → Frank 0.75 ETH"]
+          end
+      end
 
-        Header --> Body
-
-        subgraph Body["Block Body"]
-            direction LR
-            Tx1["Transaction 1<br/>Alice → Bob: 2.5 ETH"]
-            Tx2["Transaction 2<br/>Carol → Dave: 1.0 ETH"]
-            Tx3["Transaction 3<br/>Eve → Frank: 0.75 ETH"]
-            TxN["... more transactions"]
-        end
-    end
-    
-    PrevBlock["Previous Block<br/>#N-1"]
-
-    ParentHash -.->|links to| PrevBlock
+	
+	  Block -->|Links to| PrevBlock -->|Links to| PrevPrevBlock
 ```

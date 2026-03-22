@@ -39,10 +39,9 @@ This should explain why TEEs, if we take them at face value and ignore the [[#Ri
 
 In the example above, one could simply send the code and data to be computed to anyone in the world with a TEE-enabled hardware, have them execute that code, and use the attestation to be sure it was executed correctly. Moreover, if they want to make this interaction private, and only reveal a subset of the outcomes to the world and the person running the TEE-enabled hardware, we can do so.
 ## Risks
-While TEEs so far sound amazing, they have at least two major risks:
-- All of the [[Trustless]] guarantees we get from it are rooted in us trusting that the hardware manufacturers are:
-	- Not malicious
-	- Won't make any unintended mistakes that would compromise the system
+While TEEs so far sound amazing, they have at least two major risks. All of the [[Trustless]] guarantees we get from it are rooted in us trusting that the hardware manufacturers are:
+- Not malicious
+- Won't make any unintended mistakes that would compromise the system
 
 Whether one wants to trust the former is a personal choice, and based on the risk profile of the application. But the latter is more interesting: I doubt if Intel has ever intended to be malicious and put any backdoors in the SGX technology, yet there have been many mistakes in the technology that have led to vulnerabilities. The latest edition of TEE vulnerabilities at the time of writing is [TEE.fail: Breaking Trusted Execution Environments via DDR5 Memory Bus Interposition](https://tee.fail/), but quick research will reveal more similar ones[^3].
 ## Recap: Execution, Ordering, History

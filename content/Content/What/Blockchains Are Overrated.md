@@ -39,45 +39,44 @@ Consider the following diagram, in which $block_{n-2}$ is known with its three t
 
 ```mermaid
 flowchart LR
-    subgraph "Block N-2"
-	    subgraph Body
-		    direction LR
-		    Tx1
-		    Tx2
-		    Tx3
-		end
-	    subgraph Header
-		    direction LR
-		    CurrentHash["current_hash: abc"]
-		    ParentHash["parent_hash: xyz"]
-	    end
-    end
+      subgraph BN["Block N (New)"]
+          direction LR
+          subgraph HeaderN["Header"]
+              CN["hash: hij"]
+              PN["parent: def"]
+          end
+          subgraph BodyN["Body"]
+              Tx6[Tx6]
+          end
+      end
 
-    subgraph "Block N-1"
-	    subgraph BodyN["Body"]
-		    direction LR
-		    Tx4
-		    Tx5
-		end
-	    subgraph HeaderN["Header"]
-		    direction LR
-		    CurrentHashN["current_hash: def"]
-		    ParentHashN["parent_hash: abc"]
-	    end
-    end
+      subgraph BN1["Block N-1"]
+          direction LR
+          subgraph HeaderN1["Header"]
+              CN1["hash: def"]
+              PN1["parent: abc"]
+          end
+          subgraph BodyN1["Body"]
+              Tx4[Tx4]
+              Tx5[Tx5]
+          end
+      end
 
-    subgraph "Block N"
-	    subgraph BodyNN["Body"]
-		    direction LR
-		    Tx6
-		end
-	    subgraph HeaderNN["Header"]
-		    direction LR
-		    CurrentHashNN["current_hash: hij"]
-		    ParentHashNN["parent_hash: def"]
-	    end
-    end
-    Header --> HeaderN --> HeaderNN
+      subgraph BN2["Block N-2"]
+          direction LR
+          subgraph HeaderN2["Header"]
+              CN2["hash: abc"]
+              PN2["parent: xyz"]
+          end
+          subgraph BodyN2["Body"]
+              Tx1[Tx1]
+              Tx2[Tx2]
+              Tx3[Tx3]
+          end
+      end
+
+      BN -.->|parent: def| BN1
+      BN1 -.->|parent: abc| BN2
 ```
 
 - Now let's walk backwards; $block_n$ is referencing `parent_hash: def` in its header, and `def` is used as an input to the final hash of $block_n$, which is `hij`.

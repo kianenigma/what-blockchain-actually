@@ -4,10 +4,7 @@ Blockchains can be modeled as a [[Trustless]] state-machine whereby the correct 
 
 One of the 3 main ways to model a blockchain, as explained in [[Blockchain Models]].
 
-```mermaid
-graph LR
-y(("$$y$$")) -->|"$$F(x_1,y)$$"| yp(("$$y\prime$$")) -->|"$$F(x_2,y\prime)$$"| ypp(("$$y\prime\prime$$"))
-```
+![[State Transition Function#State Transition Function Diagram]]
 
 In the above, $y$,$y\prime$, and $y\prime\prime$ are different states. The whole state machine can at any point in time be in either of the states. $F$ is the state transition function and $x_1$ and $x_2$ are the inputs.
 

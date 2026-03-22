@@ -19,7 +19,9 @@ $$
 STF(block_{n+1}, state_n) \rightarrow state_{n+1}
 \end{aligned}
 $$
+
 or:
+
 ```mermaid
 graph LR
 y(("$$state_n$$")) -->|"$$STF(block_{n+1}, state_n)$$"| yp(("$$state_{n+1}$$")) -->|"$$F(block_{n+2}, state_{n+1})$$"| ypp(("$$state_{n+2}$$"))
@@ -32,32 +34,10 @@ A [[Block]] is composed of a [[Block Header]], and a set of instructions. In mos
 - The hash of the current block, so that the next potential block can link back to it.
 - These hashes, combined together, ensure some of the [[Trustless]] properties of blockchains.
 
-```mermaid
-graph TB
-    PrevBlock["Previous Block<br/>#N-1"]
+These hashes, combined together, ensure some of the [[Trustless]] properties of blockchains, explored later in [[Blockchains Are Overrated#Blockchain's Role]].
 
-    subgraph Block["Block #N"]
-        direction TB
-        subgraph Header["Block Header"]
-            direction TB
-            BlockHash["Block Hash<br/>0x7f9a...3e2d"]
-            ParentHash["Parent Hash<br/>0x4b8c...91f6"]
-            StateRoot["State Root Hash<br/>0xa1d5...7c4b"]
-        end
+![[Block#Example Block Diagram]]
 
-        Header --> Body
-
-        subgraph Body["Block Body"]
-            direction TB
-            Tx1["Transaction 1<br/>Alice → Bob: 2.5 ETH"]
-            Tx2["Transaction 2<br/>Carol → Dave: 1.0 ETH"]
-            Tx3["Transaction 3<br/>Eve → Frank: 0.75 ETH"]
-            TxN["... more transactions"]
-        end
-    end
-
-    ParentHash -.->|links to| PrevBlock
-```
 
 More about the blockchain [[State]]. The state of the blockchain is only ever meaningful *when linked to a specific block*. This is because a blockchain system essentially has *two types of states*:
 - The [[Genesis]] state, which needs to be hardcoded and agreed upon by everyone.

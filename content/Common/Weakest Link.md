@@ -4,10 +4,10 @@ While a useful term in the industries that work with an actual chain[^1], the an
 
 ```mermaid
 graph LR
-	classDef smallNode font-size:10px
-	C0[Strong Link] --> C1[Weak Link] --> C2[Strong Link]
-
-	C1:::smallNode
+      C0["  Strong Link  "] --> C1[Weak Link] --> C2["  Strong Link  "]
+      style C0 fill:#dcfce7,stroke:#22c55e,color:#166534
+      style C2 fill:#dcfce7,stroke:#22c55e,color:#166534
+      style C1 fill:#fee2e2,stroke:#ef4444,color:#991b1b
 ```
 
 The argument then is that the overall [[Trustless]]-ness of a composite [[Authority]] is only as good as its weakest component. 

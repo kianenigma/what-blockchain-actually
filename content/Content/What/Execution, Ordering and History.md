@@ -93,7 +93,7 @@ So, to take our above example, $F(x, y) \rightarrow y\prime$, and model it as a 
 
 ```mermaid
 graph LR
-y(("$$y$$")) -->|"$$F(x_1,y)$$"| yp(("$$y\prime$$")) -->|"$$F(x_2,y\prime)$$"| ypp(("$$y\prime\prime$$"))
+y((y)) -->|"F(x1,y)"| yp(("y'")) -->|"F(x2,y')"| ypp(("y''"))
 ```
 ## Summary
 This chapter was our first step towards a more concrete definition of blockchains. Within it, we modeled blockchains as a system that can do the following:

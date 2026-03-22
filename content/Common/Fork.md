@@ -2,7 +2,6 @@ When a blockchain has multiple branches, also called "tips of the chain", and is
 
 ```mermaid
 graph TD
-	direction LR
     A --> B --> C --> D0?
     C --> D1?
 ```

@@ -8,7 +8,7 @@ permalink: what/authority
 Most authorities can be abstracted as two functions: they hold value-bearing and (often [[Blockchain and Contention|contentious]]) ***state*** (information), and they perform ***mutations*** (updates) upon that state based on a well-known set of **rules**.
 
 ```mermaid
-flowchart
+flowchart TB
 	Authority
 	subgraph Mutations
 		Rules
@@ -23,7 +23,7 @@ In the example of Bitcoin, the **state** of the authority is the list of all acc
 Another property of authorities is whether the state and its mutations are in the ***real world*** or the ***digital world***.
 
 ```mermaid
-flowchart
+flowchart TB
 	Auth[Authority] --> RW[Real World]
 	Auth --> Digital[Digital World]
 ```
@@ -35,8 +35,9 @@ Conversely, the **land registry** is a **real-world form of authority**. Such an
 The often overlooked reality is: blockchains are obviously digital systems. **For a digital system, inspection of and updating the real world is (nearly) impossible to do *independently***. This difficulty, specifically when it comes to reading information from the real world, is referred to as the [[Oracle Problem]].
 
 ```mermaid
-flowchart
-	DS[Digital System] --"write ❌"--> RW[Real World] --"read ❌"--> DS
+flowchart RL
+	DS[Digital System] -->|write ❌| RW[Real World]
+	RW -->|read ❌| DS
 ```
 
 As an example, a digital authority like Bitcoin has no practical way to *independently* understand if a piece of land exists, and to whom it belongs. Moreover, Bitcoin cannot meaningfully enforce that "*Alice should from now on own this land that formerly belonged to Bob*". Sure, it can create a digital piece of data that says so, but so long as it is not enforced in the real world, it is meaningless.
