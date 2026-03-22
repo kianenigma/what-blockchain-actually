@@ -2,7 +2,6 @@
 description: Few important blockchain terminology.
 permalink: what/blockchain-terminology
 ---
-
 So much has been said about how to [[Blockchain Models|model]] blockchains in abstract terms in [[Execution, Ordering and History]], and what properties they have. But it is finally time to define a few concrete keywords about blockchains. Establishing these keywords now will also make reading the next chapters smoother, as a reader would have concrete terms to refer to something (e.g., a block, transaction, or header).
 ## Blockchain Systems != Blockchains
 First, let's establish that, unfortunately, we live in a world where names are often mistakenly attributed to broader terms. In consumer products, this is called [genericized trademarks](https://en.wikipedia.org/wiki/List_of_generic_and_genericized_trademarks) (like Xerox and Kleenex), and what we see here is the technological equivalent of that.
@@ -12,17 +11,17 @@ We refer to a very broad system, composed of many technologies, as a blockchain,
 So, going forward, when the word blockchain is used, we often mean a broad system that utilizes a blockchain.
 
 ## Blockchain Terminology
-Recall a blockchain's main ultimate purpose is to store some **([[Blockchain and Contention|contentious]]) [[State]]**, and it is updated in what is known as a [[State Transition Function]] or [[STF]]. The event that causes the STF to be executed is the creation of a new [[Block]]. So, the block is the input to the STF.
+Recall a blockchain's ultimate purpose is to store some **([[Blockchain and Contention|contentious]]) [[State]]**, and it is updated in what is known as a [[State Transition Function]] or [[STF]]. The event that causes the STF to be executed is the creation of a new [[Block]]. So, the block is the input to the STF. We can then translate our raw $F(x, y) \rightarrow y\prime$ from the [[Execution, Ordering and History#Verifiable Math Function Model|previous chapter]] to:
 
 $$
 \begin{aligned}
 STF(State_n, Block_n+1) \rightarrow State_{n+1}
 \end{aligned}
 $$
-or
+or in the [[Execution, Ordering and History#State Machine|state machine language]]:
 ```mermaid
 graph LR
-y(("state n")) -->|"STF(block n,state n)"| yp(("state n+1")) -->|" STF(block n+1,state n+1) "| ypp(("state n+2"))
+y(("state n")) -->|"STF(state n,block n+1)"| yp(("state n+1")) -->|" STF(state n+1, block n+2) "| ypp(("state n+2"))
 ```
 
 A [[Block]] is composed of a [[Block Header]], and a set of instructions. In most cases, these instructions come from external users and are called [[Transaction]]s. The block header contains a few key pieces of information, most notably:
@@ -36,7 +35,7 @@ These hashes, combined together, ensure some of the [[Trustless]] properties of 
 ![[Block#Example Block Diagram]]
 
 
-More about the blockchain [[State]]. The state of the blockchain is only ever meaningful *when linked to a specific block*. This is because a blockchain system essentially has *two types of states*:
+More about the blockchain [[State]]: The state of the blockchain is only ever meaningful *when linked to a specific block*. This is because a blockchain system essentially has *two types of states*:
 - The [[Genesis]] state, which needs to be hardcoded and agreed upon by everyone.
 - All the rest.
 The reason we emphasize this is that the rest of the states, say at block $b$, can always be re-computed by executing the sequence of blocks from $0$ to $b-1$. Revisit [[Execution, Ordering and History#Genesis and Syncing]] for a refresher if need be.

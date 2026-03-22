@@ -45,6 +45,7 @@ As an example, a digital authority like Bitcoin has no practical way to *indepen
 Contrary, Bitcoin has full independent authority, with both read and write permission, over its own _digital token_ BTC. To transfer BTC tokens from Alice to Bob, Bitcoin is operating over its sphere of authority. 
 
 This is why real-world authorities are backed by some form of ***law enforcement unit***, such as the police and military, as noted in [[What Is This All About?]]. No blockchain-based system yet has a real-world law enforcement body behind it[^1]
+
 ### The Weakest Link
 This is NOT to say that no blockchain-based system should attempt to tackle any real-world use-case. But we should acknowledge that there is a high chance of creating a system with a single point of failure here.
 
