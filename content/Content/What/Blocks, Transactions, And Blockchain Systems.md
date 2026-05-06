@@ -32,7 +32,6 @@ A [[Block]] is composed of a [[Block Header]], and a set of instructions. In mos
 - A [[Commitment Hash]] (in the form of a [[Merkle Tree]]) of the blockchain state after executing a block and its transactions. This is called the [[State Root]].
 - The hash of the parent block on top of which this block is meant to be considered valid.
 - The hash of the current block, so that the next potential block can link back to it.
-- These hashes, combined together, ensure some of the [[Trustless]] properties of blockchains.
 
 These hashes, combined together, ensure some of the [[Trustless]] properties of blockchains, explored later in [[Blockchains Are Overrated#Blockchain's Role]].
 
